@@ -55,12 +55,6 @@
                                                             <input type="text" class="form-control" name="name_ar" required>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="formrow-firstname-input">الوصف</label>
-                                                            <textarea name="notes_ar" class="form-control" rows="10" required></textarea>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane p-3" id="profile2" role="tabpanel">
@@ -69,12 +63,6 @@
                                                         <div class="mb-3">
                                                             <label class="form-label" for="formrow-firstname-input">الأسم</label>
                                                             <input type="text" class="form-control" name="name" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="formrow-firstname-input">الوصف</label>
-                                                            <textarea name="notes" class="form-control" rows="10" required></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
