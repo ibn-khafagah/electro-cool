@@ -1,6 +1,6 @@
 @extends('frontend.layout.master')
 @section('title')
-
+{{trans('dev.home')}}
 @endsection
 @section('css')
 
