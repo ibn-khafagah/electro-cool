@@ -52,28 +52,22 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-chart-line"></i>
-                        <span>Charts</span>
+                        <span>تقييمات العملاء</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="charts-morris.html">Morris Chart</a></li>
-                        <li><a href="charts-chartist.html">Chartist Chart</a></li>
-                        <li><a href="charts-chartjs.html">Chartjs Chart</a></li>
-                        <li><a href="charts-flot.html">Flot Chart</a></li>
-                        <li><a href="charts-c3.html">C3 Chart</a></li>
-                        <li><a href="charts-other.html">Jquery Knob Chart</a></li>
+                        <li><a href="{{ route('admin_feedback_create') }}">اضافة تقييم</a></li>
+                        <li><a href="{{ route('admin_feedback_index') }}">قائمة التقييمات</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-format-list-bulleted-type"></i>
-                        <span>Tables</span>
+                        <span>فريق العمل</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="tables-basic.html">Basic Tables</a></li>
-                        <li><a href="tables-datatable.html">Data Table</a></li>
-                        <li><a href="tables-responsive.html">Responsive Table</a></li>
-                        <li><a href="tables-editable.html">Editable Table</a></li>
+                        <li><a href="{{ route('admin_team_create') }}">اضافة عضو</a></li>
+                        <li><a href="{{ route('admin_team_index') }}">قائمة فريق العمل</a></li>
                     </ul>
                 </li>
 
@@ -82,15 +76,11 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-album"></i>
-                        <span>Icons</span>
+                        <span>المدونات</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="icons-material.html">Material Design</a></li>
-                        <li><a href="icons-ion.html">Ion Icons</a></li>
-                        <li><a href="icons-fontawesome.html">Font Awesome</a></li>
-                        <li><a href="icons-themify.html">Themify Icons</a></li>
-                        <li><a href="icons-dripicons.html">Dripicons</a></li>
-                        <li><a href="icons-typicons.html">Typicons Icons</a></li>
+                        <li><a href="{{ route('admin_blog_create') }}">اضافة مدونة</a></li>
+                        <li><a href="{{ route('admin_blog_index') }}">قائمة المدونات</a></li>
                     </ul>
                 </li>
 

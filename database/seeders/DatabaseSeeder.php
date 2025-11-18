@@ -19,6 +19,9 @@ class DatabaseSeeder extends Seeder
             BannerSeeder::class,
             ServiceSeeder::class,
             FeatureSeeder::class,
+            FeedbackSeeder::class,
+            TeamSeeder::class,
+            BlogSeeder::class,
         ]);
     }
 }
