@@ -16,107 +16,8 @@ URL:            https://themeforest.net/user/ThemeMascot
 @import url(icomoon.css);
 @import url(flaticon-set-current-theme.css);
 @import url(flaticon-set-communication.css);
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&amp;display=swap");
-/*
-This file contains the common styles of this theme.
-*/
-/*------------------------------------------------------------------
-[table of contents]
-* reset.scss
-* typography.scss
-* common.scss
-* container.scss
-* overlay.scss
-* header.scss
-* page-title.scss
-* boxed-layout.scss
-* dark-layout.scss
-* form.scss
-* isotope-layout.scss
-* owl-carousel.scss
-* sliders.scss
-* 404.scss
-* archive.scss
-* shop.scss
-* blog.scss
-* page.scss
-* footer-top-callout.scss
-* shortcodes 
-	* animated-layer-advanced.scss
-	* animated-layer-images.scss
-	* blockquote.scss
-	* blog.scss
-	* button.scss
-	* call-to-action.scss
-	* common.scss
-	* custom-columns-holder.scss
-	* dropcaps.scss
-	* easy-pie-chart.scss
-	* element-holder.scss
-	* final-countdown.scss
-	* flickr-feed.scss
-	* flipbox.scss
-	* funfacts.scss
-	* icon-box.scss
-	* info-banner.scss
-	* info-banner-advanced.scss
-	* instagram-feed.scss
-	* line-with-text.scss
-	* nav-tabs-holder.scss
-	* nav-tabs-pricing.scss
-	* newsletter.scss
-	* opening-hours.scss
-	* paroller.scss
-	* pie-chart.scss
-	* pricing-tables.scss
-	* progress-bar.scss
-	* screenshot-gallery.scss
-	* section-title.scss
-	* separators.scss
-	* stretched-bg.scss
-	* styled-icons.scss
-	* tabs.scss
-	* unordered-list.scss
-	* video-popup.scss
-	* working-steps.scss
-	* features-box.scss
-	* social-links.scss
-	* location-marker.scss
-* widgets 
-	* widgets-common.scss
-	* brochure-box.scss
-	* blog-list.scss
-	* calender.scss
-	* contact-info.scss
-	* empty-space.scss
-	* facebook.scss
-	* featured-page.scss
-	* flickr-feed.scss
-	* gallery-images.scss
-	* google-map.scss
-	* google-plus.scss
-	* horizontal-row.scss
-	* icon-box.scss
-	* instagram-feed.scss
-	* portfolio.scss
-	* search.scss
-	* sidebar-nav-menu.scss
-	* social-list.scss
-	* testimonials.scss
-	* twitter-feed.scss
-	* mailchimp-subscribe-form.scss
-* footer
-	* footer.scss
-	* footer-nav.scss
-	* footer-widgets.scss
-* form.scss
-* Utility Classes
-* ===============================================
-*/
-/*
- * reset.scss
- * -----------------------------------------------
-*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -167,7 +68,7 @@ body {
   line-height: 1.8;
   color: #676767;
   font-size: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 500;
   background-color: #fff;
   background-attachment: fixed;
@@ -241,13 +142,13 @@ h1, h2, h3, h4, h5, h6,
     font-weight: inherit; }
 
 .h1, .h2, .h3, h1, h2, h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
   margin-bottom: 1rem;
   margin-top: 0.75rem; }
 
 h4, h5, h6,
 .h4, .h5, .h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 600;
   line-height: 1.4;
   margin-bottom: 0.5rem;
@@ -275,10 +176,10 @@ p {
     text-decoration: underline; }
 
 .font-current-theme1 {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Cairo", sans-serif !important; }
 
 .font-current-theme2 {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Cairo", sans-serif !important; }
 
 .wp-block-quote {
   margin: 20px 0; }
@@ -2014,7 +1915,7 @@ header#header .nav-side-icon-list {
 .menuzord-menu > li.search form input[type="text"] {
   width: 160px;
   padding: 5px 10px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Cairo", sans-serif ;
   border: none;
   background: #f0f0f0;
   border-radius: 2px;
@@ -8529,7 +8430,7 @@ blockquote {
     margin-bottom: 20px;
     overflow: hidden; }
     .final-countdown-smart-style .countdown-timer .counter .value {
-      font-family: "Poppins", sans-serif;
+      font-family: "Cairo", sans-serif;
       color: #fff;
       display: block;
       font-size: 3rem;
@@ -10058,7 +9959,7 @@ body.tm-dark-layout .tm-sc-pricing-table {
       position: relative;
       z-index: 0;
       text-transform: capitalize;
-      font-family: "Poppins", sans-serif;
+      font-family: "Cairo", sans-serif;
       font-size: 2.8rem; }
       .tm-sc-section-title .title-wrapper .title .title-shadow-text {
         position: absolute;
@@ -10078,7 +9979,7 @@ body.tm-dark-layout .tm-sc-pricing-table {
     .tm-sc-section-title .title-wrapper .subtitle {
       position: relative;
       z-index: 1;
-      font-family: "Poppins", sans-serif;
+      font-family: "Cairo", sans-serif;
       font-size: 1rem;
       font-weight: 500;
       color: #aaa; }
@@ -12029,7 +11930,7 @@ body .vc_row .tm-stretched-bg-active.vc_column_container .vc_column-inner:before
     .widget.widget_rss ul li .rsswidget {
       display: block;
       color: #555;
-      font-family: "Poppins", sans-serif;
+      font-family: "Cairo", sans-serif;
       font-weight: 700; }
     .widget.widget_rss ul li .rss-date {
       color: #aaa; }
@@ -12214,7 +12115,7 @@ body .vc_row .tm-stretched-bg-active.vc_column_container .vc_column-inner:before
       .widget .post .post-right .post-title a {
         color: #555;
         letter-spacing: 0;
-        font-family: "Poppins", sans-serif;
+        font-family: "Cairo", sans-serif;
         font-size: 1rem; }
     .widget .post .post-right .entry-date {
       display: block;
@@ -14760,7 +14661,7 @@ body.tm-dark-layout .tm-sc-staff.staff-style2-classic .staff-content {
     .tm-sc-testimonials .tm-testimonial .testimonial-text-holder .testimonial-title {
       font-size: 20px;
       color: #000;
-      font-family: "Poppins", sans-serif; }
+      font-family: "Cairo", sans-serif; }
     .tm-sc-testimonials .tm-testimonial .testimonial-text-holder .author-text {
       color: #999;
       font-size: 1.2rem;
@@ -14787,7 +14688,7 @@ body.tm-dark-layout .tm-sc-staff.staff-style2-classic .staff-content {
         font-size: 0.9rem;
         font-weight: 500; }
       .tm-sc-testimonials .tm-testimonial .testimonial-author-details .testimonial-author-info-holder .job-position {
-        font-family: "Poppins", sans-serif; }
+        font-family: "Cairo", sans-serif; }
       .tm-sc-testimonials .tm-testimonial .testimonial-author-details .testimonial-author-info-holder .company-url {
         font-style: italic; }
       .tm-sc-testimonials .tm-testimonial .testimonial-author-details .testimonial-author-info-holder .author-info {
@@ -16313,7 +16214,7 @@ footer#footer.footer-inverted .widget.widget_archive ul > li, footer#footer.foot
  * -----------------------------------------------
 */
 .tm-sc-section-title .title-wrapper .subtitle {
-  font-family: "Poppins", sans-serif;
+  font-family: "Cairo", sans-serif;
   font-weight: 400;
   line-height: 36px;
   font-size: 1.5rem;
@@ -16497,7 +16398,7 @@ footer#footer.footer-inverted .widget.widget_archive ul > li, footer#footer.foot
   margin-top: 5px !important; }
 
 .font-opensans {
-  font-family: "Poppins", sans-serif !important; }
+  font-family: "Cairo", sans-serif !important; }
 
 .list-style-square ul li {
   list-style-type: none; }

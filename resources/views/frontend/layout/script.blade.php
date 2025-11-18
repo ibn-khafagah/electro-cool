@@ -1,2 +1,3 @@
 <!-- JS | Custom script for all pages -->
-<script src="js/custom.js"></script>
+<script src="{{asset('frontend/js/custom.js')}}"></script>
+@yield('js')
