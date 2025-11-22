@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend;
 use App\DataTables\ProductDatatable;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ProductRequest;
+use App\Models\Category;
 use App\Traits\ImageTraits;
 use Devrabiul\ToastMagic\Facades\ToastMagic;
 use Illuminate\Http\Request;
@@ -41,7 +42,7 @@ use ImageTraits;
     public function create()
     {
         $data = [
-
+                    'categories'    =>  Category::all(),
                 ];
         return view($this->data['folder'] . $this->data['folderBlade'] . '.create', $data);
     }
@@ -89,7 +90,8 @@ use ImageTraits;
     public function edit($id)
     {
         $data = [
-                  'data' => $this->data['Models']::findorfail(decrypt($id)),
+                    'data' => $this->data['Models']::findorfail(decrypt($id)),
+                    'categories'    =>  Category::all(),
                  ];
         return view($this->data['folder'] . $this->data['folderBlade'] . '.edit', $data);
     }
@@ -103,13 +105,17 @@ use ImageTraits;
      */
     public function update(ProductRequest $request, $id)
     {
+        dd($request->all());
         $this->data['var']=$this->data['Models']::findorfail(decrypt($id));
         $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
         $this->data['var']->name    =   ['en' => $request->name, 'ar' => $request->name_ar];
         $this->data['var']->notes   =   ['en' => $request->notes, 'ar' => $request->notes_ar];
         $this->data['var']->short_notes   =   ['en' => $request->short_notes, 'ar' => $request->short_notes_ar];
         $this->data['var']->category_id   =   $request->category_id;
-        $this->multipleImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName2'], $this->data['Models2'], 'product_id');
+        if (isset($request->image))
+        {
+            $this->multipleImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName2'], $this->data['Models2'], 'product_id');
+        }
         $this->data['var']->update();
         ToastMagic::success('message', 'تم التحديث بنجاح !');
         return redirect()->back();

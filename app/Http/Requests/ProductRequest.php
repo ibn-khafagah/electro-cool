@@ -31,7 +31,7 @@ class ProductRequest extends FormRequest
                 'max:4096',
             ],
 
-            'category_id' => 'required|exists:category,id',
+            'category_id' => 'required|exists:categories,id',
 
             'name_ar' => 'required|string|max:255',
             'name' => 'required|string|max:255',

@@ -116,6 +116,16 @@
                         <li><a href="{{ route('admin_category_index') }}">قائمة الأقسام</a></li>
                     </ul>
                 </li>
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-store"></i>
+                        <span> المنتجات </span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('admin_product_create') }}">اضافة منتج</a></li>
+                        <li><a href="{{ route('admin_product_index') }}">قائمة المنتجات</a></li>
+                    </ul>
+                </li>
 
             </ul>
         </div>

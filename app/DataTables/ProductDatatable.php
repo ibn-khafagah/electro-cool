@@ -2,6 +2,7 @@
 
 namespace App\DataTables;
 
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
@@ -21,37 +22,32 @@ class ProductDatatable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-            ->addColumn('action', 'backend.category.action')
+            ->addColumn('action', 'backend.product.action')
             ->addIndexColumn()
-            ->editColumn('image', function($data) {
-                return !is_null($data->image)
-                    ? '<img src="' . asset('upload/feature/' . $data->image) . '" style="width:40px;height:40px;border-radius:50%;" />'
+            ->editColumn('front_image', function($data) {
+                return !is_null($data->front_image)
+                    ? '<img src="' . asset('upload/product/' . $data->image) . '" style="width:40px;height:40px;border-radius:50%;" />'
                     : '<img src="' . asset('backend/default.png') . '" style="width:40px;height:40px;border-radius:50%;" />';
             })
             ->editColumn('category.name', function($row) {
                 return $row->category->name;
             })
-            ->editColumn('status', function($data) {
-                return $data->status == 0
-                    ? '<span class="badge rounded-pill badge-success">نشط</span>'
-                    : '<span class="badge rounded-pill badge-secondary">غير نشط</span>';
-            })
             ->editColumn('name', function($data) {
-                return $data->getTranslation('name', app()->getLocale());
+                return $data->getTranslation('name', 'ar');
             })
-            ->rawColumns(['action', 'image', 'status'])
+            ->rawColumns(['action', 'front_image'])
             ->setRowId('id');
     }
 
-    public function query(Category $model): QueryBuilder
+    public function query(Product $model): QueryBuilder
     {
-        return $model->newQuery();
+        return $model->newQuery()->with(['category']);
     }
 
     public function html(): HtmlBuilder
     {
         return $this->builder()
-        ->setTableId('category-table')
+        ->setTableId('product-table')
         ->columns($this->getColumns())
         ->minifiedAjax()
         ->orderBy(1, 'ASC')
@@ -73,9 +69,8 @@ class ProductDatatable extends DataTable
         return [
             Column::make('id', 'id')->title('#')->responsivePriority(0)->addClass('text-center'),
             Column::make('id', 'id')->title('تسلسل')->responsivePriority(0)->addClass('text-center')->visible(false),
-            Column::make('image', 'image')->title('الصورة')->responsivePriority(0)->addClass('text-center'),
+            Column::make('front_image', 'front_image')->title('الصورة')->responsivePriority(0)->addClass('text-center'),
             Column::make('name', 'name')->title('الأسم')->responsivePriority(0)->addClass('text-center'),
-            Column::make('status', 'status')->title('الحالة')->responsivePriority(0)->addClass('text-center'),
             Column::make('category.name', 'category.name')->title('القسم')->responsivePriority(0)->addClass('text-center'),
             Column::computed('action')
                 ->responsivePriority(0)
@@ -88,6 +83,6 @@ class ProductDatatable extends DataTable
     }
         protected function filename(): string
         {
-            return 'category_' . date('YmdHis');
+            return 'product_' . date('YmdHis');
         }
 }

@@ -33,6 +33,8 @@ return new class extends Migration
             $table->text('tiktok')->nullable();
             $table->text('whatsapp')->nullable();
             $table->text('youtube')->nullable();
+            $table->text('meta_description')->nullable();
+            $table->text('meta_keywords')->nullable();
             $table->timestamps();
         });
     }

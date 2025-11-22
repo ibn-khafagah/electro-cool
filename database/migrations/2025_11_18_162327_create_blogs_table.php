@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug');
             $table->longText('notes');
+            $table->text('meta_description')->nullable();
+            $table->text('meta_keywords')->nullable();
             $table->timestamps();
         });
     }
