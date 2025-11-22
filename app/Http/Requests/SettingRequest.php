@@ -44,6 +44,7 @@ class SettingRequest extends FormRequest
             'linkedin'      => 'nullable|url|max:500',
             'snapchat'      => 'nullable|url|max:500',
             'tiktok'        => 'nullable|url|max:500',
+            'youtube'        => 'nullable|url|max:500',
             'whatsapp'      => 'nullable|string|max:255',
         ];
     }
@@ -66,6 +67,7 @@ class SettingRequest extends FormRequest
             'linkedin.url'        => 'رابط لينكدإن يجب أن يكون رابطًا صحيحًا.',
             'snapchat.url'        => 'رابط سناب شات يجب أن يكون رابطًا صحيحًا.',
             'tiktok.url'          => 'رابط تيك توك يجب أن يكون رابطًا صحيحًا.',
+            'youtube.url'          => 'رابط يوتيوب يجب أن يكون رابطًا صحيحًا.',
 
             'whatsapp.string'     => 'رقم واتساب يجب أن يكون نصًا.',
 

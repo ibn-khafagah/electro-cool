@@ -3,27 +3,31 @@
     <div class="footer-widget-area">
         <div class="container pt-100 pb-70">
             <div class="row">
-                <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="col-md-6 col-lg-6 col-xl-4">
                     <img class="mb-30" alt="Logo" src="{{asset('upload/setting/'.getSetting()->logo)}}" style="height: 50px">
                     <div class="footer-contact-address">
                         <div class="phone mb-15">
                             <p class="mb-0">Phone</p>
-                            <h6 class="m-0 text-white">000 888 0000</h6>
+                            <h6 class="m-0 text-white">{{getSetting()->phone}}</h6>
                         </div>
                         <div class="email mb-15">
                             <p class="mb-0">Email</p>
                             <h6 class="m-0 text-white"><a
-                                    href="https://html.kodesolution.com/cdn-cgi/l/email-protection"
-                                    class="__cf_email__" data-cfemail="07696262636f626b77476a66746e6a2964686a">[email&#160;protected]</a>
+                                    href="mailto:{{getSetting()->email}}"
+                                    class="__cf_email__" data-cfemail="07696262636f626b77476a66746e6a2964686a">{{getSetting()->email}}</a>
                             </h6>
                         </div>
                         <div class="address">
                             <p class="mb-0">Address</p>
-                            <h6 class="m-0 text-white">80 Broklyn Golden Street, Usa</h6>
+                            <h6 class="m-0 text-white">{{getSetting()->address}}</h6>
+                        </div>
+                        <div class="address">
+                            <p class="mb-0">Working Hours</p>
+                            <h6 class="m-0 text-white">{{getSetting()->opening_hour}}</h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-2">
+                <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="widget widget_nav_menu">
                         <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Links</h4>
                         <div class="menu-footer-page-list">
@@ -39,62 +43,19 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
-                    <div class="widget pr-20">
-                        <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Opening
-                            Hours</h4>
-                        <div class="opening-hours border-dark">
-                            <ul>
-                                <li class="clearfix">
-                                    <span>Monday </span>
-                                    <div class="value text-white">9.00-17.00</div>
-                                </li>
-                                <li class="clearfix">
-                                    <span>Tuesday</span>
-                                    <div class="value text-white">9.00-16.00</div>
-                                </li>
-                                <li class="clearfix">
-                                    <span>Wednesday</span>
-                                    <div class="value text-white">9.00-16.00</div>
-                                </li>
-                                <li class="clearfix">
-                                    <span>Thursday</span>
-                                    <div class="value text-white">9.00-16.00</div>
-                                </li>
-                                <li class="clearfix">
-                                    <span>Saturday & Sunday</span>
-                                    <div class="value text-white">Closed</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
                     <div class="widget">
                         <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Latest
                             News</h4>
                         <div class="latest-posts">
-                            <article class="post clearfix pb-0 mb-20">
-                                <a class="post-thumb" href="#"><img src="{{asset('frontend/images/blog/latest-news1.jpg')}}" alt=""></a>
-                                <div class="post-right">
-                    <span class="post-date">
-                      <time class="entry-date text-theme-colored1"
-                            datetime="2021-05-15T06:10:26+00:00">April 15, 2021</time>
-                    </span>
-                                    <h6 class="post-title"><a href="news-details.html" class="text-white">We provide
-                                            all types of roofing services </a></h6>
-                                </div>
-                            </article>
-                            <article class="post clearfix pb-0 mb-20">
-                                <a class="post-thumb" href="#"><img src="{{asset('frontend/images/blog/latest-news2.jpg')}}" alt=""></a>
-                                <div class="post-right">
-                                    <h6 class="post-title"><a href="news-details.html" class="text-white">We provide
-                                            all types of roofing services </a></h6>
-                                    <span class="post-date">
-                      <time class="entry-date text-theme-colored1"
-                            datetime="2021-07-15T06:10:26+00:00">June 15, 2021</time>
-                    </span>
-                                </div>
-                            </article>
+                            @foreach(getFooterBlogs() as $blog)
+                                <article class="post clearfix pb-0 mb-20">
+                                    <a class="post-thumb" href="#"><img src="{{asset('upload/blog/'.$blog->image)}}" alt=""></a>
+                                    <div class="post-right">
+                                        <span class="post-date"><time class="entry-date text-theme-colored1" datetime="2021-05-15T06:10:26+00:00">{{$blog->created_at->format('M-d-Y')}}</time></span>
+                                        <h6 class="post-title"><a href="news-details.html" class="text-white">{{$blog->name}} </a></h6>
+                                    </div>
+                                </article>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -111,10 +72,30 @@
                     <div class="col-sm-6">
                         <div class="footer-paragraph text-center text-xl-end text-lg-end text-md-end">
                             <ul class="styled-icons icon-dark icon-circled icon-theme-colored1 ">
-                                <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
-                                <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
-                                <li><a class="social-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                                @if(getSetting()->facebook)
+                                    <li><a class="social-link" href="{{getSetting()->facebook}}"><i class="fab fa-facebook"></i></a></li>
+                                @endif
+                                @if(getSetting()->x)
+                                    <li><a class="social-link" href="{{getSetting()->x}}"><i class="fab fa-twitter"></i></a></li>
+                                @endif
+                                @if(getSetting()->youtube)
+                                    <li><a class="social-link" href="{{getSetting()->youtube}}"><i class="fab fa-youtube"></i></a></li>
+                                @endif
+                                @if(getSetting()->instagram)
+                                    <li><a class="social-link" href="{{getSetting()->instagram}}"><i class="fab fa-instagram"></i></a></li>
+                                @endif
+                                @if(getSetting()->linkedin)
+                                    <li><a class="social-link" href="{{getSetting()->linkedin}}"><i class="fab fa-linkedin"></i></a></li>
+                                @endif
+                                @if(getSetting()->tiktok)
+                                    <li><a class="social-link" href="{{getSetting()->tiktok}}"><i class="fab fa-tiktok"></i></a></li>
+                                @endif
+                                @if(getSetting()->snapchat)
+                                    <li><a class="social-link" href="{{getSetting()->snapchat}}"><i class="fab fa-snapchat"></i></a></li>
+                                @endif
+                                @if(getSetting()->whatsapp)
+                                    <li><a class="social-link" href="{{getSetting()->whatsapp}}"><i class="fab fa-whatsapp"></i></a></li>
+                                @endif
                             </ul>
                         </div>
                     </div>

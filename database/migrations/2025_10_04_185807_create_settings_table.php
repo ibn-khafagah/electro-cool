@@ -32,6 +32,7 @@ return new class extends Migration
             $table->text('snapchat')->nullable();
             $table->text('tiktok')->nullable();
             $table->text('whatsapp')->nullable();
+            $table->text('youtube')->nullable();
             $table->timestamps();
         });
     }

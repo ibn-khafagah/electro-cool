@@ -22,6 +22,10 @@ class DatabaseSeeder extends Seeder
             FeedbackSeeder::class,
             TeamSeeder::class,
             BlogSeeder::class,
+            PartnerSeeder::class,
+            FaqSeeder::class,
+            CategorySeeder::class,
+            ProductSeeder::class,
         ]);
     }
 }

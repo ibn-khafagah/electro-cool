@@ -14,52 +14,40 @@
         <div class="widget">
             <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Latest News</h4>
             <div class="latest-posts">
-                <article class="post clearfix pb-0 mb-10">
-                    <a class="post-thumb" href="#"><img src="https://placehold.it/75x75" alt=""></a>
-                    <div class="post-right">
-                        <h5 class="post-title mt-0"><a href="#">Sustainable Construction</a></h5>
-                        <p>Lorem ipsum dolor...</p>
-                    </div>
-                </article>
-                <article class="post clearfix pb-0 mb-10">
-                    <a class="post-thumb" href="#"><img src="https://placehold.it/75x75" alt=""></a>
-                    <div class="post-right">
-                        <h5 class="post-title mt-0"><a href="#">Industrial Coatings</a></h5>
-                        <p>Lorem ipsum dolor...</p>
-                    </div>
-                </article>
-                <article class="post clearfix pb-0 mb-10">
-                    <a class="post-thumb" href="#"><img src="https://placehold.it/75x75" alt=""></a>
-                    <div class="post-right">
-                        <h5 class="post-title mt-0"><a href="#">Storefront Installations</a></h5>
-                        <p>Lorem ipsum dolor...</p>
-                    </div>
-                </article>
+                @foreach(getFooterBlogs() as $blog)
+                    <article class="post clearfix pb-0 mb-10">
+                        <a class="post-thumb" href="#"><img src="{{asset('upload/blog/'.$blog->image)}}" alt=""></a>
+                        <div class="post-right">
+                            <h5 class="post-title mt-0"><a href="#">{{$blog->name}}</a></h5>
+                            <p>{!! Str::limit($blog->notes, 30) !!}</p>
+                        </div>
+                    </article>
+                @endforeach
             </div>
         </div>
 
         <div class="widget">
-            <h5 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Contact Info</h5>
+            <h5 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">{{trans('dev.contact')}}</h5>
             <div class="tm-widget-contact-info contact-info-style1 contact-icon-theme-colored1">
                 <ul>
                     <li class="contact-name">
                         <div class="icon"><i class="flaticon-contact-037-address"></i></div>
-                        <div class="text">John Doe</div>
+                        <div class="text">{{getSetting()->name}}</div>
                     </li>
                     <li class="contact-phone">
                         <div class="icon"><i class="flaticon-contact-042-phone-1"></i></div>
-                        <div class="text"><a href="tel:+510-455-6735">+510-455-6735</a></div>
+                        <div class="text"><a href="tel:{{getSetting()->phone}}">{{getSetting()->phone}}</a></div>
                     </li>
                     <li class="contact-email">
                         <div class="icon"><i class="flaticon-contact-043-email-1"></i></div>
                         <div class="text"><a
-                                href="https://html.kodesolution.com/cdn-cgi/l/email-protection#c4adaaa2ab84bdabb1b6a0aba9a5adaaeaa7aba9"><span
-                                    class="__cf_email__" data-cfemail="f49d9a929bb48d9b8186909b99959d9ada979b99">[email&#160;protected]</span></a>
+                                href="mailto:{{getSetting()->email}}"><span
+                                    class="__cf_email__" data-cfemail="f49d9a929bb48d9b8186909b99959d9ada979b99">{{getSetting()->email}}</span></a>
                         </div>
                     </li>
                     <li class="contact-address">
                         <div class="icon"><i class="flaticon-contact-047-location"></i></div>
-                        <div class="text">3982 Browning Lane Carolyns Circle, California</div>
+                        <div class="text">{{getSetting()->address}}</div>
                     </li>
                 </ul>
             </div>
@@ -68,6 +56,19 @@
 </div>
 <div id="wrapper" class="clearfix">
 @include('frontend.layout.navbar')
+    <div class="row">
+        <div class="col-lg-12">
+            @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul class="mb-0">
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+        </div>
+    </div>
 @yield('main')
 @include('frontend.layout.footer')
 <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>

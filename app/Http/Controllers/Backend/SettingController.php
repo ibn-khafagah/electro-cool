@@ -120,6 +120,7 @@ use ImageTraits;
         $this->data['var']->linkedin        =   $request->linkedin;
         $this->data['var']->snapchat        =   $request->snapchat;
         $this->data['var']->tiktok          =   $request->tiktok;
+        $this->data['var']->youtube         =   $request->youtube;
         $this->data['var']->whatsapp        =   $request->whatsapp;
         $this->data['var']->update();
         ToastMagic::success('message', 'تم التحديث بنجاح !');

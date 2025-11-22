@@ -14,5 +14,10 @@ return [
     */
 
     'home' => 'Home',
-
+    'about' => 'About Us',
+    'contact' => 'Contact Us',
+    'services' => 'Services',
+    'blogs' => 'Blogs',
+    'faq' => 'FAQ',
+    'contact_sent'  =>  'Your message has been sent Successfully !.',
 ];

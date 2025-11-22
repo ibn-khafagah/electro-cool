@@ -39,6 +39,7 @@ class SettingSeeder extends Seeder
             'linkedin'     => 'https://www.linkedin.com/company/elctrocool',
             'snapchat'     => 'https://www.snapchat.com/add/elctrocool',
             'tiktok'       => 'https://www.tiktok.com/@elctrocool',
+            'youtube'       => 'https://www.youtube.com',
             'whatsapp'     => 'https://wa.me/201234567890',
         ]);
     }

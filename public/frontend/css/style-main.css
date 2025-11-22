@@ -41,7 +41,7 @@ This file contains the common styles of this theme.
 * blog.scss
 * page.scss
 * footer-top-callout.scss
-* shortcodes 
+* shortcodes
 	* animated-layer-advanced.scss
 	* animated-layer-images.scss
 	* blockquote.scss
@@ -82,7 +82,7 @@ This file contains the common styles of this theme.
 	* features-box.scss
 	* social-links.scss
 	* location-marker.scss
-* widgets 
+* widgets
 	* widgets-common.scss
 	* brochure-box.scss
 	* blog-list.scss
@@ -16745,7 +16745,7 @@ footer#footer a:not(.social-link):not(.icon) {
   right: 60px; }
 
 .video-play a {
-  background: #F85158;
+  background: #5663c1;
   color: #fff;
   padding: 40px 52px;
   font-size: 34px; }
@@ -16754,7 +16754,7 @@ footer#footer a:not(.social-link):not(.icon) {
   text-align: center; }
   .features-block .features-icon i {
     font-size: 48px;
-    color: #f95259;
+    color: #5663c1;
     height: 140px;
     width: 140px;
     background: #2a2d3b;

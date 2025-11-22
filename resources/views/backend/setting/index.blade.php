@@ -97,6 +97,12 @@
                             </div> <!-- end col -->
                             <div class="col-lg-3">
                                 <div class="mb-3">
+                                    <label class="form-label" for="formrow-firstname-input">Youtube</label>
+                                    <input type="text" class="form-control" name="youtube" value="{{$data->youtube}}">
+                                </div>
+                            </div> <!-- end col -->
+                            <div class="col-lg-3">
+                                <div class="mb-3">
                                     <label class="form-label" for="formrow-firstname-input">Instagram</label>
                                     <input type="text" class="form-control" name="instagram" value="{{$data->instagram}}">
                                 </div>

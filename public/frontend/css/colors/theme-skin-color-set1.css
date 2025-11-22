@@ -241,7 +241,7 @@ ul.list.theme-colored1.check li:before,
   background-color: #283891;
   color: #fff; }
   .icon-theme-colored1.icon-dark a:hover {
-    background-color: #f7212a; }
+    background-color: #0073aa; }
 
 .icon-theme-colored1.icon-dark.icon-bordered a {
   border-color: #283891;
@@ -389,7 +389,7 @@ ul.list.theme-colored1.check li:before,
  * -----------------------------------------------
 */
 .widget .widget-title.widget-title-line-bottom.line-bottom-theme-colored1:after, footer#footer .widget .widget-title.widget-title-line-bottom.line-bottom-theme-colored1:after {
-  background: rgba(249, 82, 89, 0.3); }
+  background: rgb(27 0 255 / 30%); }
 
 /* Modern Header */
 .modern-header.modern-header-theme-colored2 .header-nav .header-nav-wrapper:not(.scroll-to-fixed-fixed) nav {

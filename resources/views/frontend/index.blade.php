@@ -19,135 +19,67 @@
                                         style="background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
                             <rs-module id="rev_slider_1_1" style="display:none;" data-version="6.1.7">
                                 <rs-slides>
-                                    <rs-slide data-key="rs-23" data-title="Slide 1" data-thumb="{{asset('frontend/images/bg/slide1.jpg')}}"
-                                              data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
-                                        <img src="{{asset('frontend/images/bg/slide1.jpg')}}" title="slide11" width="1920" height="1280"
-                                             data-parallax="off" class="rev-slidebg" data-no-retina>
-                                        <rs-layer
-                                            id="slider-6-slide-23-layer-18"
-                                            data-type="text"
-                                            data-rsp_ch="on"
-                                            data-xy="x:c;xo:0,45px,0,0;yo:175px,197px,157px,180px;"
-                                            data-text="w:normal;s:100,90,72,52;l:104,92,74,56;fw:800;a:center;"
-                                            data-frame_1="st:1000;sp:1000;sR:220;"
-                                            data-frame_999="o:0;st:w;sR:7790;"
-                                            style="z-index:9;font-family:Poppins;"
-                                        >Quality Heating<br/>
-                                            & Air Condition<br/>
-                                            <span class="text-theme-colored1">Services</span>
-                                        </rs-layer>
-                                        <rs-layer
-                                            id="slider-6-slide-23-layer-22"
-                                            data-type="text"
-                                            data-rsp_ch="on"
-                                            data-xy="x:c;xo:0,50px,0,0;yo:538px,520px,427px,382px;"
-                                            data-text="w:normal;s:20,16,16,16;l:25,20,18,22;a:left,left,left,center;"
-                                            data-frame_1="st:1500;sp:1000;"
-                                            data-frame_999="o:0;st:w;sR:8700;"
-                                            style="z-index:8;"
-                                        ><a href="page-about.html"
-                                            class="btn btn-flat btn-lg btn-theme-colored2 text-white">Get a Free
-                                                Quote</a>
-                                        </rs-layer>
-                                        <rs-layer
-                                            id="slider-6-slide-23-layer-33"
-                                            data-type="shape"
-                                            data-rsp_ch="on"
-                                            data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
-                                            data-dim="w:100%;h:100%;"
-                                            data-basealign="slide"
-                                            data-frame_1="st:500;sp:1000;"
-                                            data-frame_999="o:0;st:w;sR:8000;"
-                                            style="z-index:3;background-color:rgba(0,0,0,0.5);font-family:Roboto;"
-                                        >
-                                        </rs-layer>
-                                    </rs-slide>
-                                    <rs-slide data-key="rs-24" data-title="Slide 1" data-thumb="{{asset('frontend/images/bg/slide2.jpg')}}"
-                                              data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
-                                        <img src="{{asset('frontend/images/bg/slide2.jpg')}}" title="slide12" width="1920" height="1280"
-                                             data-parallax="off" class="rev-slidebg" data-no-retina>
-                                        <rs-layer
-                                            id="slider-6-slide-24-layer-18"
-                                            data-type="text"
-                                            data-rsp_ch="on"
-                                            data-xy="x:c;xo:0,45px,0,0;yo:175px,197px,157px,180px;"
-                                            data-text="w:normal;s:100,90,72,52;l:104,92,74,56;fw:800;a:center;"
-                                            data-frame_1="st:1000;sp:1000;sR:220;"
-                                            data-frame_999="o:0;st:w;sR:7790;"
-                                            style="z-index:9;font-family:Poppins;"
-                                        >Quality Heating<br/>
-                                            & Air Condition<br/>
-                                            <span class="text-theme-colored1">Services</span>
-                                        </rs-layer>
-                                        <rs-layer
-                                            id="slider-6-slide-24-layer-22"
-                                            data-type="text"
-                                            data-rsp_ch="on"
-                                            data-xy="x:c;xo:0,50px,0,0;yo:538px,520px,427px,382px;"
-                                            data-text="w:normal;s:20,16,16,16;l:25,20,18,22;a:left,left,left,center;"
-                                            data-frame_1="st:1500;sp:1000;"
-                                            data-frame_999="o:0;st:w;sR:8700;"
-                                            style="z-index:8;"
-                                        ><a href="page-about.html"
-                                            class="btn btn-flat btn-lg btn-theme-colored2 text-white">Get a Free
-                                                Quote</a>
-                                        </rs-layer>
-                                        <rs-layer
-                                            id="slider-6-slide-24-layer-33"
-                                            data-type="shape"
-                                            data-rsp_ch="on"
-                                            data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
-                                            data-dim="w:100%;h:100%;"
-                                            data-basealign="slide"
-                                            data-frame_1="st:500;sp:1000;"
-                                            data-frame_999="o:0;st:w;sR:8000;"
-                                            style="z-index:3;background-color:rgba(0,0,0,0.5);font-family:Roboto;"
-                                        >
-                                        </rs-layer>
-                                    </rs-slide>
-                                    <rs-slide data-key="rs-25" data-title="Slide 1" data-thumb="{{asset('frontend/images/bg/slide3.jpg')}}"
-                                              data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
-                                        <img src="{{asset('frontend/images/bg/slide3.jpg')}}" title="slide13" width="1920" height="1280"
-                                             data-parallax="off" class="rev-slidebg" data-no-retina>
-                                        <rs-layer
-                                            id="slider-6-slide-25-layer-18"
-                                            data-type="text"
-                                            data-rsp_ch="on"
-                                            data-xy="x:c;xo:0,45px,0,0;yo:175px,197px,157px,180px;"
-                                            data-text="w:normal;s:100,90,72,52;l:104,92,74,56;fw:800;a:center;"
-                                            data-frame_1="st:1000;sp:1000;sR:220;"
-                                            data-frame_999="o:0;st:w;sR:7790;"
-                                            style="z-index:9;font-family:Poppins;"
-                                        >Quality Heating<br/>
-                                            & Air Condition<br/>
-                                            <span class="text-theme-colored1">Services</span>
-                                        </rs-layer>
-                                        <rs-layer
-                                            id="slider-6-slide-25-layer-22"
-                                            data-type="text"
-                                            data-rsp_ch="on"
-                                            data-xy="x:c;xo:0,50px,0,0;yo:538px,520px,427px,382px;"
-                                            data-text="w:normal;s:20,16,16,16;l:25,20,18,22;a:left,left,left,center;"
-                                            data-frame_1="st:1500;sp:1000;"
-                                            data-frame_999="o:0;st:w;sR:8700;"
-                                            style="z-index:8;"
-                                        ><a href="page-about.html"
-                                            class="btn btn-flat btn-lg btn-theme-colored2 text-white">Get a Free
-                                                Quote</a>
-                                        </rs-layer>
-                                        <rs-layer
-                                            id="slider-6-slide-25-layer-33"
-                                            data-type="shape"
-                                            data-rsp_ch="on"
-                                            data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
-                                            data-dim="w:100%;h:100%;"
-                                            data-basealign="slide"
-                                            data-frame_1="st:500;sp:1000;"
-                                            data-frame_999="o:0;st:w;sR:8000;"
-                                            style="z-index:3;background-color:rgba(0,0,0,0.5);font-family:Roboto;"
-                                        >
-                                        </rs-layer>
-                                    </rs-slide>
+                                    @foreach($banners as $banner)
+                                        <rs-slide data-key="rs-23{{$banner->id}}" data-title="Slide 1{{$banner->id}}" data-thumb="{{asset('upload/banner/'.$banner->image)}}"
+                                                  data-anim="ei:d;eo:d;s:d;r:0;t:slotslide-horizontal;sl:d;">
+                                            <img src="{{asset('upload/banner/'.$banner->image)}}" title="slide11" width="1920" height="1280"
+                                                 data-parallax="off" class="rev-slidebg" data-no-retina>
+                                            <rs-layer
+                                                id="slider-6-slide-23-layer-18-{{$banner->id}}"
+                                                data-type="text"
+                                                data-rsp_ch="on"
+                                                data-xy="x:c;xo:0,45px,0,0;yo:175px,197px,157px,180px;"
+                                                data-text="w:normal;s:100,90,72,52;l:104,92,74,56;fw:800;a:center;"
+                                                data-frame_1="st:1000;sp:1000;sR:220;"
+                                                data-frame_999="o:0;st:w;sR:7790;"
+                                                style="z-index:9;font-family:Poppins;"
+                                            >
+                                                @php
+                                                    $text = trim($banner->name ?? '');
+                                                    $words = preg_split('/\s+/', $text);
+
+                                                    if (count($words) <= 1) {
+                                                        $line1    = $text;
+                                                        $line2    = '';
+                                                        $lastWord = '';
+                                                    } else {
+                                                        $lastWord = array_pop($words);
+                                                        $line1 = implode(' ', array_slice($words, 0, 2));
+                                                        $line2 = implode(' ', array_slice($words, 2));
+                                                    }
+                                                @endphp
+
+                                                {!! $line1 !!}<br>
+                                                {!! $line2 !!}<br>
+                                                <span class="text-theme-colored1">{!! $lastWord !!}</span>
+                                            </rs-layer>
+                                            <rs-layer
+                                                id="slider-6-slide-23-layer-22-{{$banner->id}}"
+                                                data-type="text"
+                                                data-rsp_ch="on"
+                                                data-xy="x:c;xo:0,50px,0,0;yo:538px,520px,427px,382px;"
+                                                data-text="w:normal;s:20,16,16,16;l:25,20,18,22;a:left,left,left,center;"
+                                                data-frame_1="st:1500;sp:1000;"
+                                                data-frame_999="o:0;st:w;sR:8700;"
+                                                style="z-index:8;"
+                                            ><a href="{{ route('web_contact') }}"
+                                                class="btn btn-flat btn-lg btn-theme-colored2 text-white">Get a Free
+                                                    Quote</a>
+                                            </rs-layer>
+                                            <rs-layer
+                                                id="slider-6-slide-23-layer-33-{{$banner->id}}"
+                                                data-type="shape"
+                                                data-rsp_ch="on"
+                                                data-text="w:normal;s:20,15,11,6;l:0,19,14,8;"
+                                                data-dim="w:100%;h:100%;"
+                                                data-basealign="slide"
+                                                data-frame_1="st:500;sp:1000;"
+                                                data-frame_999="o:0;st:w;sR:8000;"
+                                                style="z-index:3;background-color:rgba(0,0,0,0.5);font-family:Roboto;"
+                                            >
+                                            </rs-layer>
+                                        </rs-slide>
+                                    @endforeach
                                 </rs-slides>
                                 <rs-static-layers>
                                     <!--
@@ -274,66 +206,27 @@
                 </div>
                 <div class="section-content">
                     <div class="row">
-                        <div class="col-md-6 col-lg-4 col-xl-4 tm-animation move-up">
-                            <div class="service-item mb-md-40">
-                                <div class="service-thumb">
-                                    <img class="w-100" src="{{asset('frontend/images/services/service1.jpg')}}" alt="">
-                                </div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Cooling Services</h3>
-                                    <p class="mb-0">Lorem ipsum is simply dolor sit am adipi we help you ensure
-                                        everyone.</p>
-                                </div>
-                                <div class="read-more-button d-flex">
-                                    <div class="button-text"><a href="page-service-details.html">Read More</a></div>
-                                    <div class="button-link ms-auto">
-                                        <a href="page-service-details.html">
-                                            <div class="fa fa-arrow-right"></div>
-                                        </a>
+                        @foreach($services as $service)
+                            <div class="col-md-6 col-lg-4 col-xl-4 tm-animation move-up">
+                                <div class="service-item mb-md-40">
+                                    <div class="service-thumb">
+                                        <img class="w-100" src="{{asset('upload/service/'.$service->image)}}" alt="">
+                                    </div>
+                                    <div class="service-content">
+                                        <h3 class="service-title">{{$service->name}}</h3>
+                                        <p class="mb-0">{!! Str::limit($service->notes, 100) !!}</p>
+                                    </div>
+                                    <div class="read-more-button d-flex">
+                                        <div class="button-text"><a href="page-service-details.html">Read More</a></div>
+                                        <div class="button-link ms-auto">
+                                            <a href="page-service-details.html">
+                                                <div class="fa fa-arrow-right"></div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4 tm-animation move-up2">
-                            <div class="service-item mb-md-40">
-                                <div class="service-thumb">
-                                    <img class="w-100" src="{{asset('frontend/images/services/service2.jpg')}}" alt="">
-                                </div>
-                                <div class="service-content">
-                                    <h3 class="service-title">AC Maintenance</h3>
-                                    <p class="mb-0">Lorem ipsum is simply dolor sit am adipi we help you ensure
-                                        everyone.</p>
-                                </div>
-                                <div class="read-more-button d-flex">
-                                    <div class="button-text"><a href="page-service-details.html">Read More</a></div>
-                                    <div class="button-link ms-auto">
-                                        <a href="page-service-details.html">
-                                            <div class="fa fa-arrow-right"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4 tm-animation move-up3">
-                            <div class="service-item">
-                                <div class="service-thumb">
-                                    <img class="w-100" src="{{asset('frontend/images/services/service3.jpg')}}" alt="">
-                                </div>
-                                <div class="service-content">
-                                    <h3 class="service-title">Heating Services</h3>
-                                    <p class="mb-0">Lorem ipsum is simply dolor sit am adipi we help you ensure
-                                        everyone.</p>
-                                </div>
-                                <div class="read-more-button d-flex">
-                                    <div class="button-text"><a href="page-service-details.html">Read More</a></div>
-                                    <div class="button-link ms-auto">
-                                        <a href="page-service-details.html">
-                                            <div class="fa fa-arrow-right"></div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -354,7 +247,7 @@
                             <div class="col-lg-4 col-xl-5 tm-item-appear-clip-path">
                                 <h6 class="text-theme-colored1 mt-0 mb-0">Numbers Speaks</h6>
                                 <h2 class="mb-40 text-white">Funfacts For Best Cooling & Heating Services</h2>
-                                <a href="page-contact.html" class="btn btn-flat btn-theme-colored2 btn-md mb-md-40">Get
+                                <a href="{{ route('web_contact') }}" class="btn btn-flat btn-theme-colored2 btn-md mb-md-40">Get
                                     a Free Quote</a>
                             </div>
                             <div class="col-lg-8 col-xl-7">
@@ -463,7 +356,7 @@
                                 </div>
                                 <div class="get-the-best box-shadow mb-md-100">
                                     <div class="icon">
-                                        <img src="{{asset('frontend/images/why-choose-icon.png')}}" alt="">
+                                        <img src="{{asset('upload/setting/'.getSetting()->favicon)}}" alt="" style="width: 50px;height: 50px">
                                     </div>
                                     <div class="details">
                                         <h5>Get the Best Air Conditioning & Heating Services</h5>
@@ -494,54 +387,35 @@
                 </div>
                 <div class="section-content">
                     <div class="row">
-                        <div class="col-md-6 col-lg-3 col-xl-3 tm-animation move-up">
-                            <div class="service-feature no-border-md mb-md-30">
-                                <div class="service-feature-icon">
-                                    <img src="{{asset('frontend/images/icons/service-feature-icon1.png')}}" alt="Image">
-                                </div>
-                                <div class="service-feature-content">
-                                    <h5 class="service-feature-title">HVAC <br> Installation</h5>
-                                    <p class="service-feature-text mb-0">Lorem ipsum is simply free text available in
-                                        market wesbites.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xl-3 tm-animation move-up2">
-                            <div class="service-feature no-border-md mb-md-30">
-                                <div class="service-feature-icon">
-                                    <img src="{{asset('frontend/images/icons/service-feature-icon2.png')}}" alt="images">
-                                </div>
-                                <div class="service-feature-content">
-                                    <h5 class="service-feature-title">Duct <br> Repairing</h5>
-                                    <p class="service-feature-text mb-0">Lorem ipsum is simply free text available in
-                                        market wesbites.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xl-3 tm-animation move-up3">
-                            <div class="service-feature no-border-md mb-md-30">
-                                <div class="service-feature-icon">
-                                    <img src="{{asset('frontend/images/icons/service-feature-icon3.png')}}" alt="images">
-                                </div>
-                                <div class="service-feature-content">
-                                    <h5 class="service-feature-title">Indoor Air<br> Quality</h5>
-                                    <p class="service-feature-text mb-0">Lorem ipsum is simply free text available in
-                                        market wesbites.</p>
+                        @foreach($features as $feature)
+                            <div class="col-md-6 col-lg-3 col-xl-3 tm-animation move-up">
+                                <div class="service-feature no-border-md mb-md-30">
+                                    <div class="service-feature-icon">
+                                        <img src="{{asset('upload/feature/'.$feature->image)}}" alt="Image">
+                                    </div>
+                                    <div class="service-feature-content">
+                                        @php
+                                            $text = trim($feature->name ?? '');
+                                            $words = preg_split('/\s+/', $text);
+
+                                            if (count($words) <= 1) {
+                                                $line1 = $text;
+                                                $line2 = '';
+                                            } else {
+                                                $line1 = $words[0];
+                                                $line2 = implode(' ', array_slice($words, 1));
+                                            }
+                                        @endphp
+                                        <h5 class="service-feature-title">{!! $line1 !!}
+                                            @if($line2 != '')
+                                                <br>
+                                                {!! $line2 !!}
+                                            @endif</h5>
+                                        <p class="service-feature-text mb-0">{{$feature->notes}}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 col-xl-3 tm-animation move-up4">
-                            <div class="service-feature no-border">
-                                <div class="service-feature-icon">
-                                    <img src="{{asset('frontend/images/icons/service-feature-icon4.png')}}" alt="images">
-                                </div>
-                                <div class="service-feature-content">
-                                    <h5 class="service-feature-title">Geo Thermal <br>System</h5>
-                                    <p class="service-feature-text mb-0">Lorem ipsum is simply free text available in
-                                        market wesbites.</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                     <div class="book-service-area">
                         <div class="row d-flex align-items-center">
@@ -589,51 +463,21 @@
                 </div>
                 <div class="section-content">
                     <div class="row">
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="testimonial-item mb-md-40">
-                                <div class="author-text"> I feel very happy and be proud to connect with this industry.
-                                    I presume this is a very productive and professional industry. I wish very good luck
-                                    & success for this industry
-                                </div>
-                                <div class="author-info clearfix">
-                                    <h5 class="name">Jim Grace,</h5>
-                                    <span class="job-position text-theme-colored1">Developer</span>
-                                </div>
-                                <div class="author-thumb">
-                                    <img class="rounded-circle" src="{{asset('frontend/images/testimonials/s1.jpg')}}" alt=""/>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="testimonial-item mb-md-40">
-                                <div class="author-text"> I feel very happy and be proud to connect with this industry.
-                                    I presume this is a very productive and professional industry. I wish very good luck
-                                    & success for this industry
-                                </div>
-                                <div class="author-info clearfix">
-                                    <h5 class="name">Jim Grace,</h5>
-                                    <span class="job-position text-theme-colored1">Developer</span>
-                                </div>
-                                <div class="author-thumb">
-                                    <img class="rounded-circle" src="{{asset('frontend/images/testimonials/s2.jpg')}}" alt=""/>
+                        @foreach($feedbacks as $feedback)
+                            <div class="col-md-6 col-lg-4 col-xl-4">
+                                <div class="testimonial-item mb-md-40">
+                                    <div class="author-text">{{$feedback->notes}}
+                                    </div>
+                                    <div class="author-info clearfix">
+                                        <h5 class="name">{{$feedback->name}},</h5>
+                                        <span class="job-position text-theme-colored1">{{$feedback->job}}</span>
+                                    </div>
+                                    <div class="author-thumb">
+                                        <img class="rounded-circle" src="{{asset('upload/feedback/'.$feedback->image)}}" alt=""/>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 col-xl-4">
-                            <div class="testimonial-item">
-                                <div class="author-text"> I feel very happy and be proud to connect with this industry.
-                                    I presume this is a very productive and professional industry. I wish very good luck
-                                    & success for this industry
-                                </div>
-                                <div class="author-info clearfix">
-                                    <h5 class="name">Jim Grace,</h5>
-                                    <span class="job-position text-theme-colored1">Developer</span>
-                                </div>
-                                <div class="author-thumb">
-                                    <img class="rounded-circle" src="{{asset('frontend/images/testimonials/s3.jpg')}}" alt=""/>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -689,90 +533,34 @@
                 </div>
                 <div class="section-content">
                     <div class="row">
-                        <div class="col-md-12 col-lg-3 col-xl-3">
-                            <div class="team-item mb-30">
-                                <div class="team-thumb">
-                                    <img class="w-100" src="{{asset('frontend/images/team/1.jpg')}}" alt="">
-                                </div>
-                                <div class="team-content">
-                                    <div class="team-information">
-                                        <h5 class="team-name mt-0 mb-0"><a href="page-team-details.html">Sarah
-                                                Albert</a></h5>
-                                        <p class="designation mb-0">Engineer</p>
+                        @foreach($teams as $team)
+                            <div class="col-md-12 col-lg-3 col-xl-3">
+                                <div class="team-item mb-30">
+                                    <div class="team-thumb">
+                                        <img class="w-100" src="{{asset('upload/team/'.$team->image)}}" alt="">
                                     </div>
-                                    <div class="team-social">
-                                        <ul class="styled-icons icon-team-list icon-bordered icon-circled">
-                                            <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-3 col-xl-3">
-                            <div class="team-item mb-30">
-                                <div class="team-thumb">
-                                    <img class="w-100" src="{{asset('frontend/images/team/2.jpg')}}" alt="">
-                                </div>
-                                <div class="team-content">
-                                    <div class="team-information">
-                                        <h5 class="team-name mt-0 mb-0"><a href="page-team-details.html">Sarah
-                                                Albert</a></h5>
-                                        <p class="designation mb-0">Engineer</p>
-                                    </div>
-                                    <div class="team-social">
-                                        <ul class="styled-icons icon-team-list icon-bordered icon-circled">
-                                            <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
-                                        </ul>
+                                    <div class="team-content">
+                                        <div class="team-information">
+                                            <h5 class="team-name mt-0 mb-0"><a href="page-team-details.html">{{$team->name}}</a></h5>
+                                            <p class="designation mb-0">{{$team->job}}</p>
+                                        </div>
+                                        <div class="team-social">
+                                            <ul class="styled-icons icon-team-list icon-bordered icon-circled">
+                                                @if($team->facebook)
+                                                    <li><a class="social-link" href="{{$team->facebook}}"><i class="fab fa-facebook"></i></a></li>
+                                                @endif
+                                                @if($team->instagram)
+                                                    <li><a class="social-link" href="{{$team->instagram}}"><i class="fab fa-instagram"></i></a></li>
+                                                @endif
+                                                @if($team->whatsapp)
+                                                    <li><a class="social-link" href="{{$team->whatsapp}}"><i class="fab fa-whatsapp"></i></a></li>
+                                                @endif
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-12 col-lg-3 col-xl-3">
-                            <div class="team-item mb-30">
-                                <div class="team-thumb">
-                                    <img class="w-100" src="{{asset('frontend/images/team/3.jpg')}}" alt="">
-                                </div>
-                                <div class="team-content">
-                                    <div class="team-information">
-                                        <h5 class="team-name mt-0 mb-0"><a href="page-team-details.html">Sarah
-                                                Albert</a></h5>
-                                        <p class="designation mb-0">Engineer</p>
-                                    </div>
-                                    <div class="team-social">
-                                        <ul class="styled-icons icon-team-list icon-bordered icon-circled">
-                                            <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-3 col-xl-3">
-                            <div class="team-item mb-30">
-                                <div class="team-thumb">
-                                    <img class="w-100" src="{{asset('frontend/images/team/4.jpg')}}" alt="">
-                                </div>
-                                <div class="team-content">
-                                    <div class="team-information">
-                                        <h5 class="team-name mt-0 mb-0"><a href="page-team-details.html">Sarah
-                                                Albert</a></h5>
-                                        <p class="designation mb-0">Engineer</p>
-                                    </div>
-                                    <div class="team-social">
-                                        <ul class="styled-icons icon-team-list icon-bordered icon-circled">
-                                            <li><a class="social-link" href="#"><i class="fab fa-facebook"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a class="social-link" href="#"><i class="fab fa-youtube"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -789,7 +577,7 @@
                         <div class="item-inner">
                             <div class="item-content tm-custom-columns-11">
                                 <div class="google-map">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7496.556775569473!2d144.95479118909844!3d-37.81548660764023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1562002563953!5m2!1sen!2sbd"
+                                    <iframe src="{{getSetting()->location}}"
                                             width="2600" height="760" allowfullscreen></iframe>
                                 </div>
                             </div>
@@ -803,48 +591,39 @@
                         <div class="item-inner">
                             <div class="item-content tm-custom-columns-12 call-for-estimate-parent">
                                 <div class="call-for-estimate">
-                                    <h5 class="number"><span class="font-weight-300">Call for Estimate:</span> 666 888
-                                        0000</h5>
+                                    <h5 class="number"><span class="font-weight-300">Call for Estimate:</span> {{getSetting()->phone}}</h5>
                                 </div>
                                 <div class="contact-from mt-lg-60">
                                     <h6 class="text-theme-colored2 mt-0 mb-0">Leave a Message</h6>
                                     <h2 class="mt-0 mb-30">Contact With Us</h2>
                                     <!-- Contact Form -->
-                                    <form id="contact_form" name="contact_form" class=""
-                                          action="https://html.kodesolution.com/2020/masim-html-v2/includes/sendmail.php"
-                                          method="post">
+                                    <form  name="contact_form" class="" action="{{ route('web_storeContact') }}" method="post">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="mb-3">
-                                                    <input name="form_name" class="form-control" type="text"
-                                                           placeholder="Enter Name" required="">
+                                                    <input name="name" class="form-control" type="text" placeholder="Enter Name *" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="mb-3">
-                                                    <input name="form_email" class="form-control required email"
-                                                           type="email" placeholder="Enter Email">
+                                                    <input name="email" class="form-control required email" type="email" placeholder="Enter Email">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="mb-3">
-                                                    <input name="form_phone" class="form-control" type="text"
-                                                           placeholder="Enter Phone">
+                                                    <input name="phone" class="form-control" type="text" placeholder="Enter Phone *" required>
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="mb-3">
-                                                    <textarea name="form_message" class="form-control required" rows="6"
-                                                              placeholder="Enter Message"></textarea>
+                                                    <textarea name="notes" class="form-control required" rows="6" placeholder="Enter Message *" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="mb-3">
-                                                    <input name="form_botcheck" class="form-control" type="hidden"
-                                                           value=""/>
-                                                    <button type="submit"
-                                                            class="btn btn-flat btn-theme-colored1 text-uppercase mt-10 border-left-theme-color-2-4px"
-                                                            data-loading-text="Please wait...">Send a message
+                                                    <button type="submit" class="btn btn-flat btn-theme-colored1 text-uppercase text-white mt-10 border-left-theme-color-2-4px"
+                                                            >Send a message
                                                     </button>
                                                 </div>
                                             </div>
@@ -887,7 +666,7 @@
         </section>
 
         <!-- Section: Get a Free Quote -->
-        <section class="bg-theme-colored2" data-tm-bg-img="{{asset('frontend/images/bg/cta-bg1.png')}}">
+        <section class="bg-theme-colored2" >
             <div class="container">
                 <div class="section-content">
                     <div class="row d-flex align-items-center">
@@ -900,7 +679,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-xl-4 text-start text-lg-end">
-                            <a href="page-contact.html" class="btn btn-flat btn-dark btn-theme-colored1 text-white">Get
+                            <a href="{{ route('web_contact') }}" class="btn btn-flat btn-dark btn-theme-colored1 text-white">Get
                                 a Free Quote</a>
                         </div>
                     </div>
@@ -926,136 +705,52 @@
                     <div class="row">
                         <div class="col-xl-8">
                             <div class="row">
-                                <div class="col-md-6 col-lg-6 col-xl-6 tm-animation move-up">
-                                    <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-lg-30">
-                                        <article class="post">
-                                            <div class="entry-header">
-                                                <div class="post-thumb">
-                                                    <div class="post-thumb-inner">
-                                                        <div class="thumb"><img class="w-100" src="{{asset('frontend/images/blog/b1.jpg')}}"
-                                                                                alt="Image"></div>
-                                                    </div>
-                                                    <div class="post-single-meta">
-                                                        <div class="entry-date">14<span> June</span></div>
+                                @foreach($blogs->take(2) as $blog)
+                                    <div class="col-md-6 col-lg-6 col-xl-6 tm-animation move-up">
+                                        <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-lg-30">
+                                            <article class="post">
+                                                <div class="entry-header">
+                                                    <div class="post-thumb">
+                                                        <div class="post-thumb-inner">
+                                                            <div class="thumb"><img class="w-100" src="{{asset('upload/blog/'.$blog->image)}}"
+                                                                                    alt="Image"></div>
+                                                        </div>
+                                                        <div class="post-single-meta">
+                                                            <div class="entry-date">{{$blog->created_at->format('d')}}<span> {{$blog->created_at->format('M')}}</span></div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="entry-content">
-                                                <div class="blog-meta">
-                          <span class="admin-type mr-10">
-                          <i class="far fa-user-circle text-theme-colored1"></i>
-                          Admin
-                          </span>
-                                                    <span class="comments-type">
-                          <i class="fa fa-comment text-theme-colored1"></i>
-                          2 Comments
-                          </span>
+                                                <div class="entry-content">
+                                                    <div class="blog-meta">
+                                                  <span class="admin-type mr-10"><i class="far fa-user-circle text-theme-colored1"></i> {{getSetting()->name}} </span>
+                                                    </div>
+                                                    <h4 class="entry-title mb-20">
+                                                        <a href="news-details.html" rel="bookmark">{{$blog->name}}</a>
+                                                    </h4>
+                                                    <p>{!! Str::limit($blog->notes, 100) !!}</p>
+                                                    <div class="clearfix"></div>
                                                 </div>
-                                                <h4 class="entry-title mb-20"><a href="news-details.html"
-                                                                                 rel="bookmark">How you can Improve Air
-                                                        Conditioning Efficiency</a></h4>
-                                                <p>There are many variations of passages of Lorem Ipsum available, but
-                                                    the majority have suffered alteration in some form</p>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </article>
+                                            </article>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-6 col-lg-6 col-xl-6 tm-animation move-up2">
-                                    <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-lg-30">
-                                        <article class="post">
-                                            <div class="entry-header">
-                                                <div class="post-thumb">
-                                                    <div class="post-thumb-inner">
-                                                        <div class="thumb"><img class="w-100" src="{{asset('frontend/images/blog/b2.jpg')}}"
-                                                                                alt="Image"></div>
-                                                    </div>
-                                                    <div class="post-single-meta">
-                                                        <div class="entry-date">14<span> June</span></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="entry-content">
-                                                <div class="blog-meta">
-                          <span class="admin-type mr-10">
-                          <i class="far fa-user-circle text-theme-colored1"></i>
-                          Admin
-                          </span>
-                                                    <span class="comments-type">
-                          <i class="fa fa-comment text-theme-colored1"></i>
-                          2 Comments
-                          </span>
-                                                </div>
-                                                <h4 class="entry-title mb-20"><a href="news-details.html"
-                                                                                 rel="bookmark">How you can Improve Air
-                                                        Conditioning Efficiency</a></h4>
-                                                <p>There are many variations of passages of Lorem Ipsum available, but
-                                                    the majority have suffered alteration in some form</p>
-                                                <div class="clearfix"></div>
-                                            </div>
-                                        </article>
-                                    </div>
-                                </div>
+
+                                @endforeach
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-8 col-xl-4 tm-animation move-up3">
-                            <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-30">
-                                <article class="post">
-                                    <div class="entry-content">
-                                        <div class="blog-meta">
-                      <span class="admin-type mr-10">
-                      <i class="far fa-user-circle text-theme-colored1"></i>
-                      Admin
-                      </span>
-                                            <span class="comments-type">
-                      <i class="fa fa-comment text-theme-colored1"></i>
-                      2 Comments
-                      </span>
+                            @foreach($blogs->skip(2)->take(3) as $row)
+                                <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-30">
+                                    <article class="post">
+                                        <div class="entry-content">
+                                            <div class="blog-meta">
+                                          <span class="admin-type mr-10"><i class="far fa-user-circle text-theme-colored1"></i> {{getSetting()->name}} </span>
+                                            </div>
+                                            <h4 class="entry-title mb-0"><a href="#" rel="bookmark">{{$row->name}}</a></h4>
+                                            <div class="clearfix"></div>
                                         </div>
-                                        <h4 class="entry-title mb-0"><a href="#" rel="bookmark">How to Improve Air
-                                                Conditioning Efficiency</a></h4>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme mb-30">
-                                <article class="post">
-                                    <div class="entry-content">
-                                        <div class="blog-meta">
-                      <span class="admin-type mr-10">
-                      <i class="far fa-user-circle text-theme-colored1"></i>
-                      Admin
-                      </span>
-                                            <span class="comments-type">
-                      <i class="fa fa-comment text-theme-colored1"></i>
-                      2 Comments
-                      </span>
-                                        </div>
-                                        <h4 class="entry-title mb-0"><a href="#" rel="bookmark">How to Improve Air
-                                                Conditioning Efficiency</a></h4>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="tm-sc-blog tm-sc-blog-masonry blog-style1-current-theme">
-                                <article class="post">
-                                    <div class="entry-content">
-                                        <div class="blog-meta">
-                      <span class="admin-type mr-10">
-                      <i class="far fa-user-circle text-theme-colored1"></i>
-                      Admin
-                      </span>
-                                            <span class="comments-type">
-                      <i class="fa fa-comment text-theme-colored1"></i>
-                      2 Comments
-                      </span>
-                                        </div>
-                                        <h4 class="entry-title mb-0"><a href="#" rel="bookmark">How to Improve Air
-                                                Conditioning Efficiency</a></h4>
-                                        <div class="clearfix"></div>
-                                    </div>
-                                </article>
-                            </div>
+                                    </article>
+                                </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
@@ -1072,18 +767,11 @@
                                 <div class="owl-carousel owl-theme tm-owl-carousel-6col" data-autoplay="true"
                                      data-loop="true" data-duration="6000" data-smartspeed="300" data-margin="30"
                                      data-stagepadding="0" data-laptop="4">
-                                    <div class="item"><a target="_blank" href="#"> <img src='{{asset('frontend/images/clients/1.png')}}'
-                                                                                        alt='Image'/> </a></div>
-                                    <div class="item"><a target="_blank" href="#"> <img src='{{asset('frontend/images/clients/2.png')}}'
-                                                                                        alt='Image'/> </a></div>
-                                    <div class="item"><a target="_blank" href="#"> <img src='{{asset('frontend/images/clients/3.png')}}'
-                                                                                        alt='Image'/> </a></div>
-                                    <div class="item"><a target="_blank" href="#"> <img src='{{asset('frontend/images/clients/4.png')}}'
-                                                                                        alt='Image'/> </a></div>
-                                    <div class="item"><a target="_blank" href="#"> <img src='{{asset('frontend/images/clients/5.png')}}'
-                                                                                        alt='Image'/> </a></div>
-                                    <div class="item"><a target="_blank" href="#"> <img src='{{asset('frontend/images/clients/6.png')}}'
-                                                                                        alt='Image'/> </a></div>
+                                    @foreach($partners as $partner)
+                                        <div class="item"><a target="_blank" href="#">
+                                                <img src='{{asset('upload/partner/'.$partner->image)}}' alt='{{$partner->name}}'/> </a>
+                                        </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
