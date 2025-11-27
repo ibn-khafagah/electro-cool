@@ -12,7 +12,7 @@ class Service extends Model
 {
     use HasFactory, HasTranslations, HasTranslatableSlug;
 
-    Public $translatable = ['name', 'slug', 'notes'];
+    Public $translatable = ['name', 'slug', 'notes', 'meta_description', 'meta_keyword'];
     protected $guarded = [];
 
     public function getSlugOptions() : SlugOptions

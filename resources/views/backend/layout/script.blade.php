@@ -27,6 +27,10 @@
 <!-- Datatable init js -->
 <script src="{{asset('backend/assets/js/pages/datatables.init.js')}}"></script>
 <script src="{{asset('backend/ckeditor/ckeditor.js')}}"></script>
+<!-- Magnific Popup-->
+<script src="{{asset('backend/assets/libs/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+<!-- lightbox init js-->
+<script src="{{asset('backend/assets/js/pages/lightbox.init.js')}}"></script>
 <script src="{{asset('backend/assets/js/app.js')}}"></script>
 {!! ToastMagic::scripts() !!}
 @yield('script')

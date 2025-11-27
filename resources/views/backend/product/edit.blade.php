@@ -97,6 +97,18 @@
                                                             <textarea name="notes_ar" class="form-control ckeditor" rows="10">{{$data->getTranslation('notes', 'ar')}}</textarea>
                                                         </div>
                                                     </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Description(SEO)</label>
+                                                            <textarea name="meta_description_ar" class="form-control" rows="10">{{$data->getTranslation('meta_description', 'ar')}}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Keyword(SEO)</label>
+                                                            <textarea name="meta_keyword_ar" class="form-control" rows="10">{{$data->getTranslation('meta_keyword', 'ar')}}</textarea>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane p-3" id="profile2" role="tabpanel">
@@ -117,6 +129,18 @@
                                                         <div class="mb-3">
                                                             <label class="form-label" for="formrow-firstname-input">الوصف</label>
                                                             <textarea name="notes" class="form-control ckeditor" rows="10" >{{$data->getTranslation('notes', 'en')}}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Description(SEO)</label>
+                                                            <textarea name="meta_description" class="form-control" rows="10">{{$data->getTranslation('meta_description', 'en')}}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Keyword(SEO)</label>
+                                                            <textarea name="meta_keyword" class="form-control" rows="10">{{$data->getTranslation('meta_keyword', 'en')}}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>

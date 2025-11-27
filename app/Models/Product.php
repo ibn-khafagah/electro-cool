@@ -12,7 +12,7 @@ class Product extends Model
 {
     use HasFactory, HasTranslations, HasTranslatableSlug;
 
-    Public $translatable = ['name', 'short_notes', 'notes', 'slug'];
+    Public $translatable = ['name', 'short_notes', 'notes', 'slug', 'meta_description', 'meta_keyword'];
     protected $guarded = [];
 
     public function getSlugOptions() : SlugOptions

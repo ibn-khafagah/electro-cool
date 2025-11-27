@@ -56,6 +56,18 @@
                                                             <input type="text" class="form-control" name="name_ar" value="{{$data->getTranslation('name', 'ar')}}">
                                                         </div>
                                                     </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Description(SEO)</label>
+                                                            <textarea name="meta_description_ar" class="form-control" rows="10">{{$data->getTranslation('meta_description', 'ar')}}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Keyword(SEO)</label>
+                                                            <textarea name="meta_keyword_ar" class="form-control" rows="10">{{$data->getTranslation('meta_keyword', 'ar')}}</textarea>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="tab-pane p-3" id="profile2" role="tabpanel">
@@ -64,6 +76,18 @@
                                                         <div class="mb-3">
                                                             <label class="form-label" for="formrow-firstname-input">الأسم</label>
                                                             <input type="text" class="form-control" name="name" value="{{$data->getTranslation('name', 'en')}}">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Description(SEO)</label>
+                                                            <textarea name="meta_description" class="form-control" rows="10">{{$data->getTranslation('meta_description', 'en')}}</textarea>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <div class="mb-3">
+                                                            <label class="form-label" for="formrow-firstname-input">Meta Keyword(SEO)</label>
+                                                            <textarea name="meta_keyword" class="form-control" rows="10">{{$data->getTranslation('meta_keyword', 'en')}}</textarea>
                                                         </div>
                                                     </div>
                                                 </div>

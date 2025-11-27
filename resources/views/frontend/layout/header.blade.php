@@ -2,8 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <meta name="description" content="Masim - Air Conditioning Repair HTML Template"/>
-<meta name="keywords"
-      content="ac, air condition, air conditioning, business, cooling, handyman, heat, heating, home repair, hvac, installation, maintenance, refrigeration, repairing, ventilation"/>
+<meta name="keywords" content="ac, air condition, air conditioning, business, cooling, handyman, heat, heating, home repair, hvac, installation, maintenance, refrigeration, repairing, ventilation"/>
 <meta name="author" content="ThemeMascot"/>
 <!-- Page Title -->
 <title>@yield('title')</title>
@@ -36,7 +35,6 @@
 <link id="menuzord-menu-skins" href="{{asset('frontend/css/menuzord-skins/menuzord-rounded-boxed.css')}}" rel="stylesheet"/>
 <!-- CSS | Responsive media queries -->
 <link href="{{asset('frontend/css/responsive.css')}}" rel="stylesheet" type="text/css">
-<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
 <!-- CSS | Theme Color -->
 <link href="{{asset('frontend/css/colors/theme-skin-color-set1.css')}}" rel="stylesheet" type="text/css">
 <!-- external javascripts -->

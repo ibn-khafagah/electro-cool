@@ -2,21 +2,19 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\DataTables\BlogDatatable;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\BlogRequest;
 use App\Traits\ImageTraits;
 use Devrabiul\ToastMagic\Facades\ToastMagic;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class AboutController extends Controller
 {
 use ImageTraits;
     protected $data = [
                  'folder' => 'backend.',
-                 'var' => 'blog.',
-                 'Models' => 'App\Models\Blog',
-                 'folderBlade' => 'blog',
+                 'var' => 'admin.',
+                 'Models' => 'App\Models\Hotel',
+                 'folderBlade' => 'hotel',
                  'imageName1' => 'image',
              ];
 
@@ -26,7 +24,7 @@ use ImageTraits;
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(BlogDatatable $dataTable)
+    public function index(CurrencyDataTable $dataTable)
     {
          return $dataTable->render($this->data['folder'] . $this->data['folderBlade'] . '.index');
     }
@@ -50,14 +48,11 @@ use ImageTraits;
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BlogRequest $request)
+    public function store(Request $request)
     {
         $this->data['var'] = new $this->data['Models']();
         $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
-        $this->data['var']->name    =   ['en' => $request->name, 'ar' => $request->name_ar];
-        $this->data['var']->notes   =   ['en' => $request->notes, 'ar' => $request->notes_ar];
-        $this->data['var']->meta_description    =   $request->meta_description;
-        $this->data['var']->meta_keyword        =   $request->meta_keyword;
+
         $this->data['var']->save();
         ToastMagic::success('message', 'تم الأضافة بنجاح !');
         return redirect()->back();
@@ -98,14 +93,11 @@ use ImageTraits;
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BlogRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $this->data['var']=$this->data['Models']::findorfail(decrypt($id));
         $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
-        $this->data['var']->name    =   ['en' => $request->name, 'ar' => $request->name_ar];
-        $this->data['var']->notes   =   ['en' => $request->notes, 'ar' => $request->notes_ar];
-        $this->data['var']->meta_description    =   $request->meta_description;
-        $this->data['var']->meta_keyword        =   $request->meta_keyword;
+
         $this->data['var']->update();
         ToastMagic::success('message', 'تم التحديث بنجاح !');
         return redirect()->back();

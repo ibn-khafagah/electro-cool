@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Backend\AlbumController;
 use App\Http\Controllers\Backend\BannerController;
 use App\Http\Controllers\Backend\BlogController;
 use App\Http\Controllers\Backend\CategoryController;
@@ -26,7 +27,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(ServiceController::class)->prefix('service')->name('service_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -34,7 +35,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(FeatureController::class)->prefix('feature')->name('feature_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -42,7 +43,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(FeedbackController::class)->prefix('feedback')->name('feedback_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -50,7 +51,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(TeamController::class)->prefix('team')->name('team_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -58,7 +59,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(BlogController::class)->prefix('blog')->name('blog_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -66,7 +67,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(PartnerController::class)->prefix('partner')->name('partner_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -74,7 +75,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(FaqController::class)->prefix('faq')->name('faq_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -82,7 +83,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(CategoryController::class)->prefix('category')->name('category_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -90,7 +91,7 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
     });
     Route::controller(ProductController::class)->prefix('product')->name('product_')->group(function(){
         Route::get('index', 'index')->name('index');
@@ -98,8 +99,19 @@ Route::middleware('auth')->group(function () {
         Route::post('store', 'store')->name('store');
         Route::get('edit/{id}', 'edit')->name('edit');
         Route::post('update/{id}', 'update')->name('update');
-        Route::delete('destroy/{id}', 'destroy')->name('destroy');
-        Route::delete('destroyImage/{id}', 'destroyImage')->name('destroyImage');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroyImage/{id}', 'destroyImage')->name('destroyImage');
+    });
+    Route::controller(AlbumController::class)->prefix('album')->name('album_')->group(function(){
+        Route::get('index', 'index')->name('index');
+        Route::get('create', 'create')->name('create');
+        Route::post('store', 'store')->name('store');
+        Route::get('images/{id}', 'images')->name('images');
+        Route::get('edit/{id}', 'edit')->name('edit');
+        Route::post('uploadImages/{id}', 'uploadImages')->name('uploadImages');
+        Route::post('update/{id}', 'update')->name('update');
+        Route::get('destroy/{id}', 'destroy')->name('destroy');
+        Route::get('destroyImage/{id}', 'destroyImage')->name('destroyImage');
     });
 
 });

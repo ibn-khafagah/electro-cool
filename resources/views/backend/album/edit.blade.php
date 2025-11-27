@@ -1,30 +1,18 @@
 @extends('backend.layout.master')
 @section('title')
-    اضافة قسم
+{{$data->name}}
 @endsection
 @section('css')
 
 @endsection
 @section('main')
-    <form action="{{ route('admin_category_store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('admin_album_update', encrypt($data->id)) }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="card-title">@yield('title')</h4>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="mt-4">
-                                    <div class="col-lg-12">
-                                        <div class="mb-3">
-                                            <label class="form-label" for="formrow-firstname-input">الصورة</label>
-                                            <input type="file" class="form-control"  name="image" required>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> <!-- end col -->
-                        </div> <!-- end row -->
                         <div class="row">
                             <div class="col-xl-12">
                                 <div class="card">
@@ -52,19 +40,7 @@
                                                     <div class="col-lg-12">
                                                         <div class="mb-3">
                                                             <label class="form-label" for="formrow-firstname-input">الأسم</label>
-                                                            <input type="text" class="form-control" name="name_ar" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="formrow-firstname-input">Meta Description(SEO)</label>
-                                                            <textarea name="meta_description_ar" class="form-control" rows="10"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="formrow-firstname-input">Meta Keyword(SEO)</label>
-                                                            <textarea name="meta_keyword_ar" class="form-control" rows="10"></textarea>
+                                                            <input type="text" class="form-control" name="name_ar" value="{{$data->getTranslation('name', 'ar')}}">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -74,25 +50,12 @@
                                                     <div class="col-lg-12">
                                                         <div class="mb-3">
                                                             <label class="form-label" for="formrow-firstname-input">الأسم</label>
-                                                            <input type="text" class="form-control" name="name" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="formrow-firstname-input">Meta Description(SEO)</label>
-                                                            <textarea name="meta_description" class="form-control" rows="10"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="mb-3">
-                                                            <label class="form-label" for="formrow-firstname-input">Meta Keyword(SEO)</label>
-                                                            <textarea name="meta_keyword" class="form-control" rows="10"></textarea>
+                                                            <input type="text" class="form-control" name="name" value="{{$data->getTranslation('name', 'en')}}">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +63,7 @@
                         <div class="row mt-1">
                             <div class="col-lg-12">
                                 <div class="mt-4">
-                                    <button type="submit" class="btn btn-primary w-md"><i class="fa fa-plus"></i> اضافة جديد </button>
+                                    <button type="submit" class="btn btn-primary w-md"><i class="fa fa-refresh"></i> تحديث البيانات </button>
                                 </div>
                             </div>
                         </div>

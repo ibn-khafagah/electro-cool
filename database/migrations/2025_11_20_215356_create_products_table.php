@@ -20,7 +20,7 @@ return new class extends Migration
             $table->longText('notes');
             $table->foreignId('category_id')->constrained('categories')->cascadeOnUpdate()->cascadeOnDelete();
             $table->text('meta_description')->nullable();
-            $table->text('meta_keywords')->nullable();
+            $table->text('meta_keyword')->nullable();
             $table->timestamps();
         });
     }

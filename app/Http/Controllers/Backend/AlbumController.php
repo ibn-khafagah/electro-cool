@@ -2,21 +2,22 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\DataTables\BlogDatatable;
+use App\DataTables\AlbumDatatable;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\BlogRequest;
+use App\Http\Requests\AlbumRequest;
 use App\Traits\ImageTraits;
 use Devrabiul\ToastMagic\Facades\ToastMagic;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller
+class AlbumController extends Controller
 {
 use ImageTraits;
     protected $data = [
                  'folder' => 'backend.',
-                 'var' => 'blog.',
-                 'Models' => 'App\Models\Blog',
-                 'folderBlade' => 'blog',
+                 'var' => 'album.',
+                 'Models' => 'App\Models\Album',
+                 'Models2' => 'App\Models\AlbumImages',
+                 'folderBlade' => 'album',
                  'imageName1' => 'image',
              ];
 
@@ -26,7 +27,7 @@ use ImageTraits;
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(BlogDatatable $dataTable)
+    public function index(AlbumDatatable $dataTable)
     {
          return $dataTable->render($this->data['folder'] . $this->data['folderBlade'] . '.index');
     }
@@ -36,6 +37,14 @@ use ImageTraits;
      *
      * @return \Illuminate\Http\Response
      */
+    public function images($id)
+    {
+        $data = [
+                    'data'  =>  $this->data['Models']::findOrFail(decrypt($id)),
+                ];
+        return view($this->data['folder'] . $this->data['folderBlade'] . '.image', $data);
+    }
+
     public function create()
     {
         $data = [
@@ -50,14 +59,10 @@ use ImageTraits;
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(BlogRequest $request)
+    public function store(AlbumRequest $request)
     {
         $this->data['var'] = new $this->data['Models']();
-        $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
-        $this->data['var']->name    =   ['en' => $request->name, 'ar' => $request->name_ar];
-        $this->data['var']->notes   =   ['en' => $request->notes, 'ar' => $request->notes_ar];
-        $this->data['var']->meta_description    =   $request->meta_description;
-        $this->data['var']->meta_keyword        =   $request->meta_keyword;
+        $this->data['var']->name = ['en' => $request->name, 'ar' => $request->name_ar];
         $this->data['var']->save();
         ToastMagic::success('message', 'تم الأضافة بنجاح !');
         return redirect()->back();
@@ -98,16 +103,19 @@ use ImageTraits;
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(BlogRequest $request, $id)
+    public function update(AlbumRequest $request, $id)
     {
         $this->data['var']=$this->data['Models']::findorfail(decrypt($id));
-        $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
-        $this->data['var']->name    =   ['en' => $request->name, 'ar' => $request->name_ar];
-        $this->data['var']->notes   =   ['en' => $request->notes, 'ar' => $request->notes_ar];
-        $this->data['var']->meta_description    =   $request->meta_description;
-        $this->data['var']->meta_keyword        =   $request->meta_keyword;
+        $this->data['var']->name = ['en' => $request->name, 'ar' => $request->name_ar];
         $this->data['var']->update();
         ToastMagic::success('message', 'تم التحديث بنجاح !');
+        return redirect()->back();
+    }
+    public function uploadImages(Request $request, $id)
+    {
+        $this->data['var']  =   $this->data['Models']::findOrFail(decrypt($id));
+        $this->multipleImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1'], $this->data['Models2'], 'album_id');
+        ToastMagic::success('message', 'تم رفع الصور بنجاح !');
         return redirect()->back();
     }
 
@@ -120,6 +128,13 @@ use ImageTraits;
     public function destroy($id)
     {
         $this->data['var']=$this->data['Models']::findorfail(decrypt($id));
+        $this->data['var']->destroy(decrypt($id));
+        ToastMagic::error('message', 'تم الحذف بنجاح !');
+        return redirect()->back();
+    }
+    public function destroyImage($id)
+    {
+        $this->data['var']=$this->data['Models2']::findorfail(decrypt($id));
         $this->data['var']->destroy(decrypt($id));
         ToastMagic::error('message', 'تم الحذف بنجاح !');
         return redirect()->back();

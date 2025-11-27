@@ -686,6 +686,80 @@
                 </div>
             </div>
         </section>
+        <!-- Section: Gallery -->
+        <section>
+            <div class="container-fluid pt-10 pb-0">
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-lg-12 col-xl-12">
+                            <div class="owl-carousel tm-owl-carousel-4col lightgallery-lightbox" data-margin="10">
+                                <div class="gallery-item">
+                                    <div class="gallery-thumb">
+                                        <img class="w-100" src="{{asset('frontend/images/gallery/1.jpg')}}" alt="">
+                                        <div class="gallery-link">
+                                            <a class="lightgallery-trigger" data-exthumbimage="{{asset('frontend/images/gallery/1.jpg')}}"
+                                               data-src="{{asset('frontend/images/gallery/1.jpg')}}" title="Gallery 1"
+                                               href="{{asset('frontend/images/gallery/1.jpg')}}"><i class="fa fa-plus"></i></a>
+                                            <!-- <a class="lightgallery-trigger"><i class="fa fa-plus"></i></a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="gallery-thumb">
+                                        <img class="w-100" src="{{asset('frontend/images/gallery/2.jpg')}}" alt="">
+                                        <div class="gallery-link">
+                                            <a class="lightgallery-trigger" data-exthumbimage="{{asset('frontend/images/gallery/2.jpg')}}"
+                                               data-src="{{asset('frontend/images/gallery/2.jpg')}}" title="Gallery 2"
+                                               href="{{asset('frontend/images/gallery/2.jpg')}}"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="gallery-thumb">
+                                        <img class="w-100" src="{{asset('frontend/images/gallery/3.jpg')}}" alt="">
+                                        <div class="gallery-link">
+                                            <a class="lightgallery-trigger" data-exthumbimage="{{asset('frontend/images/gallery/3.jpg')}}"
+                                               data-src="{{asset('frontend/images/gallery/3.jpg')}}" title="Gallery 3"
+                                               href="{{asset('frontend/images/gallery/3.jpg')}}"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="gallery-thumb">
+                                        <img class="w-100" src="{{asset('frontend/images/gallery/4.jpg')}}" alt="">
+                                        <div class="gallery-link">
+                                            <a class="lightgallery-trigger" data-exthumbimage="{{asset('frontend/images/gallery/4.jpg')}}"
+                                               data-src="{{asset('frontend/images/gallery/4.jpg')}}" title="Gallery 4"
+                                               href="{{asset('frontend/images/gallery/4.jpg')}}"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="gallery-thumb">
+                                        <img class="w-100" src="{{asset('frontend/images/gallery/1.jpg')}}" alt="">
+                                        <div class="gallery-link">
+                                            <a class="lightgallery-trigger" data-exthumbimage="{{asset('frontend/images/gallery/1.jpg')}}"
+                                               data-src="{{asset('frontend/images/gallery/1.jpg')}}" title="Gallery 1"
+                                               href="{{asset('frontend/images/gallery/1.jpg')}}"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="gallery-thumb">
+                                        <img class="w-100" src="{{asset('frontend/images/gallery/3.jpg')}}" alt="">
+                                        <div class="gallery-link">
+                                            <a class="lightgallery-trigger" data-exthumbimage="{{asset('frontend/images/gallery/3.jpg')}}"
+                                               data-src="{{asset('frontend/images/gallery/3.jpg')}}" title="Gallery 3"
+                                               href="{{asset('frontend/images/gallery/3.jpg')}}"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Section: News -->
         <section>
             <div class="container">

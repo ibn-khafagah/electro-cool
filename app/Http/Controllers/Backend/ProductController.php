@@ -57,10 +57,12 @@ use ImageTraits;
     {
         $this->data['var'] = new $this->data['Models']();
         $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
-        $this->data['var']->name    =   ['en' => $request->name, 'ar' => $request->name_ar];
-        $this->data['var']->notes   =   ['en' => $request->notes, 'ar' => $request->notes_ar];
-        $this->data['var']->short_notes   =   ['en' => $request->short_notes, 'ar' => $request->short_notes_ar];
-        $this->data['var']->category_id   =   $request->category_id;
+        $this->data['var']->name                =   ['en' => $request->name, 'ar' => $request->name_ar];
+        $this->data['var']->notes               =   ['en' => $request->notes, 'ar' => $request->notes_ar];
+        $this->data['var']->short_notes         =   ['en' => $request->short_notes, 'ar' => $request->short_notes_ar];
+        $this->data['var']->category_id         =   $request->category_id;
+        $this->data['var']->meta_description    =   $request->meta_description;
+        $this->data['var']->meta_keyword        =   $request->meta_keyword;
         $this->data['var']->save();
         $this->multipleImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName2'], $this->data['Models2'], 'product_id');
         ToastMagic::success('message', 'تم الأضافة بنجاح !');
@@ -108,10 +110,12 @@ use ImageTraits;
         dd($request->all());
         $this->data['var']=$this->data['Models']::findorfail(decrypt($id));
         $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
-        $this->data['var']->name    =   ['en' => $request->name, 'ar' => $request->name_ar];
-        $this->data['var']->notes   =   ['en' => $request->notes, 'ar' => $request->notes_ar];
-        $this->data['var']->short_notes   =   ['en' => $request->short_notes, 'ar' => $request->short_notes_ar];
-        $this->data['var']->category_id   =   $request->category_id;
+        $this->data['var']->name                =   ['en' => $request->name, 'ar' => $request->name_ar];
+        $this->data['var']->notes               =   ['en' => $request->notes, 'ar' => $request->notes_ar];
+        $this->data['var']->short_notes         =   ['en' => $request->short_notes, 'ar' => $request->short_notes_ar];
+        $this->data['var']->category_id         =   $request->category_id;
+        $this->data['var']->meta_description    =   $request->meta_description;
+        $this->data['var']->meta_keyword        =   $request->meta_keyword;
         if (isset($request->image))
         {
             $this->multipleImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName2'], $this->data['Models2'], 'product_id');

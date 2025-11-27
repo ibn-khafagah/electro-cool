@@ -122,6 +122,8 @@ use ImageTraits;
         $this->data['var']->tiktok          =   $request->tiktok;
         $this->data['var']->youtube         =   $request->youtube;
         $this->data['var']->whatsapp        =   $request->whatsapp;
+        $this->data['var']->meta_description    =   $request->meta_description;
+        $this->data['var']->meta_keyword        =   $request->meta_keyword;
         $this->data['var']->update();
         ToastMagic::success('message', 'تم التحديث بنجاح !');
         return redirect()->back();

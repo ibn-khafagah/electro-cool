@@ -11,14 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('services', function (Blueprint $table) {
+        Schema::create('album_images', function (Blueprint $table) {
             $table->id();
-            $table->string('image');
-            $table->string('name');
-            $table->string('slug');
-            $table->longText('notes');
-            $table->text('meta_description')->nullable();
-            $table->text('meta_keyword')->nullable();
+            $table->string('name')->nullable();
+            $table->string('image')->nullable();
+            $table->foreignId('album_id')->constrained('albums')->cascadeOnUpdate()->cascadeOnDelete();
             $table->timestamps();
         });
     }
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('services');
+        Schema::dropIfExists('album_images');
     }
 };
