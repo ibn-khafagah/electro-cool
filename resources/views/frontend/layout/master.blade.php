@@ -10,13 +10,13 @@
         <div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i
                     class="fa fa-times side-panel-trigger-icon"></i></a></div>
         <img class="logo mb-50" src="{{asset('upload/setting/'. getSetting()->logo)}}" alt="Logo">
-        <p>Our motive is to help the poor, helpless and orphan children all over the world.</p>
+        <p>{{getSetting()->notes}}</p>
         <div class="widget">
-            <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">Latest News</h4>
+            <h4 class="widget-title widget-title-line-bottom line-bottom-theme-colored1">{{trans('dev.latest_news')}}</h4>
             <div class="latest-posts">
                 @foreach(getFooterBlogs() as $blog)
                     <article class="post clearfix pb-0 mb-10">
-                        <a class="post-thumb" href="#"><img src="{{asset('upload/blog/'.$blog->image)}}" alt=""></a>
+                        <a class="post-thumb" href="{{ route('web_blog', $blog->slug) }}"><img src="{{asset('upload/blog/'.$blog->image)}}" alt=""></a>
                         <div class="post-right">
                             <h5 class="post-title mt-0"><a href="#">{{$blog->name}}</a></h5>
                             <p>{!! Str::limit($blog->notes, 30) !!}</p>

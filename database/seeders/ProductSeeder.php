@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\Product;
+use App\Models\ProductImage;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,7 +16,7 @@ class ProductSeeder extends Seeder
     {
         $data = [
             [
-                'front_image' => 'cooling-front.jpg',
+                'front_image' => '1.jpg',
                 'category_id' => 1,
                 'name'        => [
                     'ar' => 'نظام تبريد احترافي',
@@ -31,7 +32,7 @@ class ProductSeeder extends Seeder
                 ],
             ],
             [
-                'front_image' => 'fan-coil-front.jpg',
+                'front_image' => '2.jpg',
                 'category_id' => 2,
                 'name'        => [
                     'ar' => 'وحدة فان كويل 2 طن',
@@ -51,5 +52,14 @@ class ProductSeeder extends Seeder
         foreach ($data as $product) {
             Product::create($product);
         }
+
+        ProductImage::create([
+            'product_id' => 1,
+            'image' => '2.jpg',
+        ]);
+        ProductImage::create([
+            'product_id' => 2,
+            'image' => '1.jpg',
+        ]);
     }
 }

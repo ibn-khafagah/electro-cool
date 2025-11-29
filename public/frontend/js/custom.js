@@ -1,4 +1,11 @@
-var THEMEMASCOT = {};
+var THEMEMASCOT = THEMEMASCOT || {};
+
+THEMEMASCOT.isRTL = {
+    check: function() {
+        // بيرجع true لو الصفحة RTL و false لو LTR
+        return $("html").attr("dir") === "rtl";
+    }
+};
 
 (function($) {
   "use strict";
@@ -568,7 +575,7 @@ var THEMEMASCOT = {};
       $('[data-tm-z-index]').each(function() {
         $(this).css('z-index', $(this).data("tm-z-index"));
       });
-      
+
       $('[data-tm-padding]').each(function() {
         $(this).css('padding', $(this).data("tm-padding"));
       });
@@ -1340,13 +1347,13 @@ var THEMEMASCOT = {};
 
         if (this_item_parent.hasClass('menu-item-has-children')) {
           var submenu = this_item_parent.find('> ul.dropdown, > .megamenu');
-  
+
           if (submenu.is(':visible')) {
             submenu.slideUp(450, 'easeInOutQuint');
             this_item_parent.removeClass('open-sub-menu');
           } else {
             this_item_parent.addClass('open-sub-menu');
-    
+
             if(this_item_parent_siblings_has_dropdown.length === 0) {
               submenu.slideDown(400, 'easeInOutQuint');
             } else {
@@ -1356,7 +1363,7 @@ var THEMEMASCOT = {};
             }
           }
         }
-        
+
         return false;
       });
     },
@@ -2406,7 +2413,7 @@ var THEMEMASCOT = {};
     TM_tweetie: function() {
       var $twitter_feed = $('.twitter-feed');
       var $twitter_feed_carousel = $('.twitter-feed-carousel');
-      
+
       if( $twitter_feed.length > 0 ) {
         $twitter_feed.twittie({
           username: $twitter_feed.data('username'),

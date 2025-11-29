@@ -71,8 +71,6 @@
                     </ul>
                 </li>
 
-
-
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="mdi mdi-album"></i>
@@ -136,7 +134,17 @@
                         <li><a href="{{ route('admin_album_index') }}">قائمة الألومات</a></li>
                     </ul>
                 </li>
-
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <i class="mdi mdi-format-list-bulleted-type"></i>
+                        <span>صفحات الموقع</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{ route('admin_about_index') }}">من نحن</a></li>
+                        <li><a href="{{ route('admin_contact_index') }}">طلبات التواصل</a></li>
+                        <li><a href="{{ route('admin_home_index') }}">الصفحة الرئيسية</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <!-- Sidebar -->

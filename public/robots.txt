@@ -1,2 +1,7 @@
 User-agent: *
 Disallow:
+Disallow: /administrator/
+Disallow: /dashboard/
+Disallow: /login
+
+Sitemap: https://electro-cool.com/sitemap.xml

@@ -2,7 +2,7 @@
 
 namespace App\DataTables;
 
-use App\Models\Product;
+use App\Models\Contact;
 use Illuminate\Database\Eloquent\Builder as QueryBuilder;
 use Yajra\DataTables\EloquentDataTable;
 use Yajra\DataTables\Html\Builder as HtmlBuilder;
@@ -12,7 +12,7 @@ use Yajra\DataTables\Html\Editor\Editor;
 use Yajra\DataTables\Html\Editor\Fields;
 use Yajra\DataTables\Services\DataTable;
 
-class ProductDatatable extends DataTable
+class ContactDatatable extends DataTable
 {
     /**
      * Build the DataTable class.
@@ -22,32 +22,21 @@ class ProductDatatable extends DataTable
     public function dataTable(QueryBuilder $query): EloquentDataTable
     {
         return (new EloquentDataTable($query))
-            ->addColumn('action', 'backend.product.action')
+            ->addColumn('action', 'backend.contact.action')
             ->addIndexColumn()
-            ->editColumn('front_image', function($data) {
-                return !is_null($data->front_image)
-                    ? '<img src="' . asset('upload/product/' . $data->front_image) . '" style="width:40px;height:40px;border-radius:50%;" />'
-                    : '<img src="' . asset('backend/default.png') . '" style="width:40px;height:40px;border-radius:50%;" />';
-            })
-            ->editColumn('category.name', function($row) {
-                return $row->category->name;
-            })
-            ->editColumn('name', function($data) {
-                return $data->getTranslation('name', 'ar');
-            })
-            ->rawColumns(['action', 'front_image'])
+            ->rawColumns(['action'])
             ->setRowId('id');
     }
 
-    public function query(Product $model): QueryBuilder
+    public function query(Contact $model): QueryBuilder
     {
-        return $model->newQuery()->with(['category']);
+        return $model->newQuery();
     }
 
     public function html(): HtmlBuilder
     {
         return $this->builder()
-        ->setTableId('product-table')
+        ->setTableId('contact-table')
         ->columns($this->getColumns())
         ->minifiedAjax()
         ->orderBy(1, 'ASC')
@@ -69,9 +58,9 @@ class ProductDatatable extends DataTable
         return [
             Column::make('id', 'id')->title('#')->responsivePriority(0)->addClass('text-center'),
             Column::make('id', 'id')->title('تسلسل')->responsivePriority(0)->addClass('text-center')->visible(false),
-            Column::make('front_image', 'front_image')->title('الصورة')->responsivePriority(0)->addClass('text-center'),
             Column::make('name', 'name')->title('الأسم')->responsivePriority(0)->addClass('text-center'),
-            Column::make('category.name', 'category.name')->title('القسم')->responsivePriority(0)->addClass('text-center'),
+            Column::make('email', 'email')->title('البريد الألكتروني')->responsivePriority(0)->addClass('text-center'),
+            Column::make('phone', 'phone')->title('الهاتف')->responsivePriority(0)->addClass('text-center'),
             Column::computed('action')
                 ->responsivePriority(0)
                 ->title('الأجراءات')
@@ -83,6 +72,6 @@ class ProductDatatable extends DataTable
     }
         protected function filename(): string
         {
-            return 'product_' . date('YmdHis');
+            return 'contact_' . date('YmdHis');
         }
 }

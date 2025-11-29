@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('image1')->nullable();
             $table->string('image2')->nullable();
-            $table->string('sub_title')->nullable();
             $table->string('title')->nullable();
+            $table->string('sub_title')->nullable();
             $table->text('notes')->nullable();
             $table->text('check1')->nullable();
             $table->text('check1_notes')->nullable();

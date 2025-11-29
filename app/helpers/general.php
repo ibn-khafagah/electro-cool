@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\About;
 use App\Models\Blog;
+use App\Models\HomePage;
 use App\Models\Setting;
 
 if (! function_exists('getSetting')) {
@@ -24,3 +26,19 @@ if (!function_exists('getFooterBlogs')) {
         return $blogs;
     }
 }
+if (!function_exists('getAbout')) {
+    function getAbout()
+    {
+        $about = About::first();
+        return $about;
+    }
+}
+if (!function_exists('getHome')) {
+    function getHome()
+    {
+        $home = HomePage::first();
+        return $home;
+    }
+}
+
+

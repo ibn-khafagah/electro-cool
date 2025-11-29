@@ -2,22 +2,21 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\DataTables\ContactDatatable;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\AboutRequest;
 use App\Traits\ImageTraits;
 use Devrabiul\ToastMagic\Facades\ToastMagic;
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class ContactController extends Controller
 {
 use ImageTraits;
     protected $data = [
                  'folder' => 'backend.',
-                 'var' => 'about.',
-                 'Models' => 'App\Models\About',
-                 'folderBlade' => 'about',
-                 'imageName1' => 'image1',
-                 'imageName2' => 'image2',
+                 'var' => 'contact.',
+                 'Models' => 'App\Models\Contact',
+                 'folderBlade' => 'contact',
+                 'imageName1' => 'image',
              ];
 
 
@@ -26,12 +25,9 @@ use ImageTraits;
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(ContactDatatable $dataTable)
     {
-        $data   =   [
-            'data' =>  $this->data['Models']::first(),
-        ];
-         return view($this->data['folder'] . $this->data['folderBlade'] . '.index', $data);
+         return $dataTable->render($this->data['folder'] . $this->data['folderBlade'] . '.index');
     }
 
     /**
@@ -98,23 +94,11 @@ use ImageTraits;
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(AboutRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $this->data['var']=$this->data['Models']::findorfail(decrypt($id));
         $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName1']);
-        $this->uploadImage($this->data['var'], $this->data['folderBlade'],$request,$this->data['imageName2']);
-        $this->data['var']->sub_title       =   ['ar' => $request->sub_title_ar, 'en' => $request->sub_title];
-        $this->data['var']->title           =   ['ar' => $request->title_ar, 'en' => $request->title];
-        $this->data['var']->notes           =   ['ar' => $request->notes_ar, 'en' => $request->notes];
-        $this->data['var']->check1          =   ['ar' => $request->check1_ar, 'en' => $request->check1];
-        $this->data['var']->check1_notes    =   ['ar' => $request->check1_notes_ar, 'en' => $request->check1_notes];
-        $this->data['var']->check2          =   ['ar' => $request->check2_ar, 'en' => $request->check2];
-        $this->data['var']->check2_notes    =   ['ar' => $request->check2_notes_ar, 'en' => $request->check2_notes];
-        $this->data['var']->check3          =   ['ar' => $request->check3_ar, 'en' => $request->check3];
-        $this->data['var']->check3_notes    =   ['ar' => $request->check3_notes_ar, 'en' => $request->check3_notes];
-        $this->data['var']->check4          =   ['ar' => $request->check4_ar, 'en' => $request->check4];
-        $this->data['var']->check4_notes    =   ['ar' => $request->check4_notes_ar, 'en' => $request->check4_notes];
-        $this->data['var']->video           =   $request->video;
+
         $this->data['var']->update();
         ToastMagic::success('message', 'تم التحديث بنجاح !');
         return redirect()->back();

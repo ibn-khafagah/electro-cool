@@ -1,17 +1,11 @@
 <!-- Meta Tags -->
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-<meta name="description" content="Masim - Air Conditioning Repair HTML Template"/>
-<meta name="keywords" content="ac, air condition, air conditioning, business, cooling, handyman, heat, heating, home repair, hvac, installation, maintenance, refrigeration, repairing, ventilation"/>
-<meta name="author" content="ThemeMascot"/>
 <!-- Page Title -->
 <title>@yield('title')</title>
+@yield('seo')
 <!-- Favicon and Touch Icons -->
 <link href="{{asset('upload/setting/'.getSetting()->favicon)}}" rel="shortcut icon" type="image/png">
-<link href="{{asset('frontend/images/apple-touch-icon.png')}}" rel="apple-touch-icon">
-<link href="{{asset('frontend/images/apple-touch-icon-72x72.png')}}" rel="apple-touch-icon" sizes="72x72">
-<link href="{{asset('frontend/images/apple-touch-icon-114x114.png')}}" rel="apple-touch-icon" sizes="114x114">
-<link href="{{asset('frontend/images/apple-touch-icon-144x144.png')}}" rel="apple-touch-icon" sizes="144x144">
 <!-- Stylesheet -->
 @if(App::getLocale() == 'ar')
     <link href="{{asset('frontend/css/bootstrap-rtl.min.css')}}" rel="stylesheet" type="text/css">

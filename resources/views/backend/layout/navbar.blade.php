@@ -27,6 +27,7 @@
             </button>
         </div>
 
+        <a href="{{ route('admin_generate_sitemap') }}" class="btn btn-outline-primary btn-sm">تحديث خريطة الموقع</a>
         <div class="d-flex">
 
             <div class="dropdown d-none d-lg-inline-block">

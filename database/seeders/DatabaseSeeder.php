@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             ProductSeeder::class,
             AlbumSeeder::class,
             AboutSeeder::class,
+            HomePageSeeder::class,
         ]);
     }
 }

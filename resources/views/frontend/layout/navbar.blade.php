@@ -66,17 +66,20 @@
                                     <li class="{{getActiveRoutesHome('web_index')}} menu-item">
                                         <a href="{{ route('web_index') }}" >{{trans('dev.home')}}</a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a href="#">{{trans('dev.about')}}</a>
+                                    <li class="{{getActiveRoutesHome('web_about')}}  menu-item">
+                                        <a href="{{ route('web_about') }}">{{trans('dev.about')}}</a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a href="#">{{trans('dev.services')}}</a>
+                                    <li class="{{getActiveRoutesHome('web_services')}}menu-item">
+                                        <a href="{{ route('web_services') }}">{{trans('dev.services')}}</a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a href="#">{{trans('dev.blogs')}}</a>
+                                    <li class="{{getActiveRoutesHome('web_products')}}menu-item">
+                                        <a href="{{ route('web_products') }}">{{trans('dev.products')}}</a>
                                     </li>
-                                    <li class="menu-item">
-                                        <a href="#">{{trans('dev.faq')}}</a>
+                                    <li class="{{getActiveRoutesHome('web_blogs')}} menu-item">
+                                        <a href="{{ route('web_blogs') }}">{{trans('dev.blogs')}}</a>
+                                    </li>
+                                    <li class="{{getActiveRoutesHome('web_gallery')}} menu-item">
+                                        <a href="{{ route('web_gallery') }}">{{trans('dev.gallery')}}</a>
                                     </li>
                                     <li class="{{getActiveRoutesHome('web_contact')}} menu-item">
                                         <a href="{{ route('web_contact') }}">{{trans('dev.contact')}}</a>
@@ -87,8 +90,6 @@
                         </div>
                         <div class="col-sm-auto align-self-center nav-side-icon-parent">
                             <ul class="list-inline nav-side-icon-list">
-                                <li class="hidden-mobile-mode"><a href="#" id="top-nav-search-btn"><i
-                                            class="search-icon fa fa-search"></i></a></li>
                                 <li class="hidden-mobile-mode">
                                     <div class="top-nav-mini-cart-icon-container">
                                         <div class="top-nav-mini-cart-icon-contents">
